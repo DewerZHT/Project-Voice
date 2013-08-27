@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [STM32F407VG.PrjPcb]
+   Generated File[STM32F407VG2_Pcb.TXT]
+   Generated File[STM32F407VG2_Pcb.LDP]
+   Generated File[STM32F407VG2_Pcb.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At ¤U¤È 02:00:48 On 2013/3/17
