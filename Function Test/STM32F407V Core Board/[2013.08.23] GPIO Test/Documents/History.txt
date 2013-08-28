@@ -1,0 +1,10 @@
+History.txt
+
+Version 1 
+  GPIO test use Ouput Data Register (access directly)
+  
+Version 2
+  GPIO test use ST GPIO library GPIO_SetBits and GPIO_ResetBits to config output pin
+  
+Version 3
+  Config and access GPIO with library stm32f4_gpio_config and access with I/O Port BitBand

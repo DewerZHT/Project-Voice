@@ -1,0 +1,15 @@
+.\Obj\uart_test_main.o: ..\Program\UART_Test_Main.c
+.\Obj\uart_test_main.o: ..\Libraries\CMSIS\stm32f4xx.h
+.\Obj\uart_test_main.o: ..\Libraries\CMSIS\core_cm4.h
+.\Obj\uart_test_main.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\Obj\uart_test_main.o: ..\Libraries\CMSIS\core_cmInstr.h
+.\Obj\uart_test_main.o: ..\Libraries\CMSIS\core_cmFunc.h
+.\Obj\uart_test_main.o: ..\Libraries\CMSIS\core_cm4_simd.h
+.\Obj\uart_test_main.o: ..\Libraries\CMSIS\system_stm32f4xx.h
+.\Obj\uart_test_main.o: ..\Program\stm32f4xx_conf.h
+.\Obj\uart_test_main.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h
+.\Obj\uart_test_main.o: ..\Libraries\CMSIS\stm32f4xx.h
+.\Obj\uart_test_main.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h
+.\Obj\uart_test_main.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h
+.\Obj\uart_test_main.o: ..\Program\stm32f4_delay.h
+.\Obj\uart_test_main.o: ..\Program\stm32f4_usart.h

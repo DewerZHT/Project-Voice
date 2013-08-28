@@ -1,0 +1,56 @@
+*** Creating Trace Output File '.\Obj\STM32F4_UART_Test.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\obj\startup_stm32f4xx.o"'
+### List of Objects: adding '".\obj\system_stm32f4xx.o"'
+### List of Objects: adding '".\obj\stm32f4_delay.o"'
+### List of Objects: adding '".\obj\stm32f4_gpio.o"'
+### List of Objects: adding '".\obj\stm32f4_usart.o"'
+### List of Objects: adding '".\obj\uart_test_main.o"'
+### List of Objects: adding '".\obj\misc.o"'
+### List of Objects: adding '".\obj\stm32f4xx_adc.o"'
+### List of Objects: adding '".\obj\stm32f4xx_can.o"'
+### List of Objects: adding '".\obj\stm32f4xx_crc.o"'
+### List of Objects: adding '".\obj\stm32f4xx_cryp.o"'
+### List of Objects: adding '".\obj\stm32f4xx_cryp_aes.o"'
+### List of Objects: adding '".\obj\stm32f4xx_cryp_des.o"'
+### List of Objects: adding '".\obj\stm32f4xx_cryp_tdes.o"'
+### List of Objects: adding '".\obj\stm32f4xx_dac.o"'
+### List of Objects: adding '".\obj\stm32f4xx_dbgmcu.o"'
+### List of Objects: adding '".\obj\stm32f4xx_dcmi.o"'
+### List of Objects: adding '".\obj\stm32f4xx_dma.o"'
+### List of Objects: adding '".\obj\stm32f4xx_exti.o"'
+### List of Objects: adding '".\obj\stm32f4xx_flash.o"'
+### List of Objects: adding '".\obj\stm32f4xx_fsmc.o"'
+### List of Objects: adding '".\obj\stm32f4xx_gpio.o"'
+### List of Objects: adding '".\obj\stm32f4xx_hash.o"'
+### List of Objects: adding '".\obj\stm32f4xx_hash_md5.o"'
+### List of Objects: adding '".\obj\stm32f4xx_hash_sha1.o"'
+### List of Objects: adding '".\obj\stm32f4xx_i2c.o"'
+### List of Objects: adding '".\obj\stm32f4xx_iwdg.o"'
+### List of Objects: adding '".\obj\stm32f4xx_pwr.o"'
+### List of Objects: adding '".\obj\stm32f4xx_rcc.o"'
+### List of Objects: adding '".\obj\stm32f4xx_rng.o"'
+### List of Objects: adding '".\obj\stm32f4xx_rtc.o"'
+### List of Objects: adding '".\obj\stm32f4xx_sdio.o"'
+### List of Objects: adding '".\obj\stm32f4xx_spi.o"'
+### List of Objects: adding '".\obj\stm32f4xx_syscfg.o"'
+### List of Objects: adding '".\obj\stm32f4xx_tim.o"'
+### List of Objects: adding '".\obj\stm32f4xx_usart.o"'
+### List of Objects: adding '".\obj\stm32f4xx_wwdg.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M4.fp ".\obj\startup_stm32f4xx.o" ".\obj\system_stm32f4xx.o" ".\obj\stm32f4_delay.o" ".\obj\stm32f4_gpio.o" ".\obj\stm32f4_usart.o" ".\obj\uart_test_main.o" ".\obj\misc.o" ".\obj\stm32f4xx_adc.o" ".\obj\stm32f4xx_can.o" ".\obj\stm32f4xx_crc.o" ".\obj\stm32f4xx_cryp.o" ".\obj\stm32f4xx_cryp_aes.o" ".\obj\stm32f4xx_cryp_des.o" ".\obj\stm32f4xx_cryp_tdes.o" ".\obj\stm32f4xx_dac.o" ".\obj\stm32f4xx_dbgmcu.o" ".\obj\stm32f4xx_dcmi.o" ".\obj\stm32f4xx_dma.o" ".\obj\stm32f4xx_exti.o" ".\obj\stm32f4xx_flash.o" ".\obj\stm32f4xx_fsmc.o" ".\obj\stm32f4xx_gpio.o" ".\obj\stm32f4xx_hash.o" ".\obj\stm32f4xx_hash_md5.o" ".\obj\stm32f4xx_hash_sha1.o" ".\obj\stm32f4xx_i2c.o" ".\obj\stm32f4xx_iwdg.o" ".\obj\stm32f4xx_pwr.o" ".\obj\stm32f4xx_rcc.o" ".\obj\stm32f4xx_rng.o" ".\obj\stm32f4xx_rtc.o" ".\obj\stm32f4xx_sdio.o" ".\obj\stm32f4xx_spi.o" ".\obj\stm32f4xx_syscfg.o" ".\obj\stm32f4xx_tim.o" ".\obj\stm32f4xx_usart.o" ".\obj\stm32f4xx_wwdg.o" 
+--library_type=microlib --strict --scatter ".\Obj\STM32F4_UART_Test.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\List\STM32F4_UART_Test.map" -o .\Obj\STM32F4_UART_Test.axf### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\Obj\STM32F4_UART_Test.axf'
+### ADS-LD Command File: '.\Obj\STM32F4_UART_Test.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\Obj\STM32F4_UART_Test.lnp', Handle=0x00000E80
+### Writing '.lnp' file
+### ADS-LD Command file '.\Obj\STM32F4_UART_Test.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.
