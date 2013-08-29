@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1377669126 source:e:\dropbox\workspace\course\101-3 operating system\homework\program homework #3\os_programhw_03\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
