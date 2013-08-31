@@ -1,0 +1,5 @@
+--cpu Cortex-M4.fp ".\obj\startup_stm32f4xx.o" ".\obj\system_stm32f4xx.o" ".\obj\test_uart_main.o" ".\obj\stm32f4xx_rcc.o" ".\obj\stm32f4xx_gpio.o" ".\obj\stm32f4xx_usart.o" ".\obj\stm32f4_delay.o" ".\obj\qcoptermv_led.o" ".\obj\qcoptermv_rs232.o" 
+--strict --scatter ".\Obj\Project_Test_UART.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\List\Project_Test_UART.map" -o .\Obj\Project_Test_UART.axf
