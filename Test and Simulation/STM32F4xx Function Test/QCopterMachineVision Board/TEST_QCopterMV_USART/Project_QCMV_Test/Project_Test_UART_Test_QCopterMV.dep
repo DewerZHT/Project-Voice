@@ -13,7 +13,7 @@ I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x52202429)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h)(0x52202429)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x52202429)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x52202429)
-F (..\Program\Test_UART_Main.c)(0x5220AC78)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I..\ -I..\Libraries\CMSIS -I..\Libraries\CMSIS\startup -I..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I..\Libraries\STM32F4xx_StdPeriph_Driver\src -I..\Program -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F4xx -DSTM32F40XX -DUSE_STDPERIPH_DRIVER -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM -o ".\Obj\test_uart_main.o" --omf_browse ".\Obj\test_uart_main.crf" --depend ".\Obj\test_uart_main.d")
+F (..\Program\Test_UART_Main.c)(0x52219E16)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I..\ -I..\Libraries\CMSIS -I..\Libraries\CMSIS\startup -I..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I..\Libraries\STM32F4xx_StdPeriph_Driver\src -I..\Program -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F4xx -DSTM32F40XX -DUSE_STDPERIPH_DRIVER -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM -o ".\Obj\test_uart_main.o" --omf_browse ".\Obj\test_uart_main.crf" --depend ".\Obj\test_uart_main.d")
 I (..\Libraries\CMSIS\stm32f4xx.h)(0x52202429)
 I (..\Libraries\CMSIS\core_cm4.h)(0x52202429)
 I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x516E81E6)
@@ -26,7 +26,8 @@ I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x52202429)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h)(0x52202429)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x52202429)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x52202429)
-I (..\Program\QCopterMV_LED.h)(0x52209685)
+I (..\Program\stm32f4_gpio.h)(0x52202E1A)
+I (..\Program\QCopterMV_LED.h)(0x5221646A)
 I (..\Program\QCopterMV_RS232.h)(0x5220B169)
 F (..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rcc.c)(0x52202429)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I..\ -I..\Libraries\CMSIS -I..\Libraries\CMSIS\startup -I..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I..\Libraries\STM32F4xx_StdPeriph_Driver\src -I..\Program -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F4xx -DSTM32F40XX -DUSE_STDPERIPH_DRIVER -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM -o ".\Obj\stm32f4xx_rcc.o" --omf_browse ".\Obj\stm32f4xx_rcc.crf" --depend ".\Obj\stm32f4xx_rcc.d")
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x52202429)
@@ -81,7 +82,7 @@ I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x52202429)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h)(0x52202429)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x52202429)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x52202429)
-F (..\Program\QCopterMV_LED.c)(0x5220945C)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I..\ -I..\Libraries\CMSIS -I..\Libraries\CMSIS\startup -I..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I..\Libraries\STM32F4xx_StdPeriph_Driver\src -I..\Program -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F4xx -DSTM32F40XX -DUSE_STDPERIPH_DRIVER -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM -o ".\Obj\qcoptermv_led.o" --omf_browse ".\Obj\qcoptermv_led.crf" --depend ".\Obj\qcoptermv_led.d")
+F (..\Program\QCopterMV_LED.c)(0x5221645C)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I..\ -I..\Libraries\CMSIS -I..\Libraries\CMSIS\startup -I..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I..\Libraries\STM32F4xx_StdPeriph_Driver\src -I..\Program -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F4xx -DSTM32F40XX -DUSE_STDPERIPH_DRIVER -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM -o ".\Obj\qcoptermv_led.o" --omf_browse ".\Obj\qcoptermv_led.crf" --depend ".\Obj\qcoptermv_led.d")
 I (..\Program\stm32f4_gpio.h)(0x52202E1A)
 I (..\Libraries\CMSIS\stm32f4xx.h)(0x52202429)
 I (..\Libraries\CMSIS\core_cm4.h)(0x52202429)
@@ -95,8 +96,8 @@ I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x52202429)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h)(0x52202429)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x52202429)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x52202429)
-I (..\Program\QCopterMV_LED.h)(0x52209685)
-F (..\Program\QCopterMV_RS232.c)(0x52216183)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I..\ -I..\Libraries\CMSIS -I..\Libraries\CMSIS\startup -I..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I..\Libraries\STM32F4xx_StdPeriph_Driver\src -I..\Program -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F4xx -DSTM32F40XX -DUSE_STDPERIPH_DRIVER -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM -o ".\Obj\qcoptermv_rs232.o" --omf_browse ".\Obj\qcoptermv_rs232.crf" --depend ".\Obj\qcoptermv_rs232.d")
+I (..\Program\QCopterMV_LED.h)(0x5221646A)
+F (..\Program\QCopterMV_RS232.c)(0x52219DF2)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I..\ -I..\Libraries\CMSIS -I..\Libraries\CMSIS\startup -I..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I..\Libraries\STM32F4xx_StdPeriph_Driver\src -I..\Program -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F4xx -DSTM32F40XX -DUSE_STDPERIPH_DRIVER -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM -o ".\Obj\qcoptermv_rs232.o" --omf_browse ".\Obj\qcoptermv_rs232.crf" --depend ".\Obj\qcoptermv_rs232.d")
 I (..\Program\stm32f4_gpio.h)(0x52202E1A)
 I (..\Libraries\CMSIS\stm32f4xx.h)(0x52202429)
 I (..\Libraries\CMSIS\core_cm4.h)(0x52202429)

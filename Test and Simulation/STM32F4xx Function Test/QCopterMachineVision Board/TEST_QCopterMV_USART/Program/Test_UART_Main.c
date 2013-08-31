@@ -15,6 +15,9 @@
 // ST library
 #include <stm32f4xx.h>
 
+// STM32F4xx Config library
+#include "stm32f4_gpio.h"
+
 // QCopter MachineVision Module
 #include "QCopterMV_LED.h"
 #include "QCopterMV_RS232.h"
@@ -28,9 +31,13 @@ int main(void)
 	// QCopter MachineVision Config
 	RS232_Config();
 	
+	RS232_SendStr(USART3, "Hello !\n\r");
+	RS232_SendStr(USART3, "STM32F4 QCMV UART Test.\n\r");
+	LED_G = ~LED_G;
+
 	while(1) {
 		
-		
+
 		
 	} // END while
 

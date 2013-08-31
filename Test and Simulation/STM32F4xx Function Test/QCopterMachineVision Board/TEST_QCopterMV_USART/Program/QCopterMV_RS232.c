@@ -54,6 +54,10 @@ void RS232_Config( void )
 	USART_InitStruct.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;
 	USART_Init(USART3, &USART_InitStruct);
 	USART_Cmd(USART3, ENABLE);
+	
+	// initial at line one column 1
+	RS232_SendStr(USART3, "\r");
+	
 }
 
 /******************************************************************************

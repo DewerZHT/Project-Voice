@@ -12,5 +12,6 @@
 .\Obj\test_uart_main.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h
 .\Obj\test_uart_main.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h
 .\Obj\test_uart_main.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h
+.\Obj\test_uart_main.o: ..\Program\stm32f4_gpio.h
 .\Obj\test_uart_main.o: ..\Program\QCopterMV_LED.h
 .\Obj\test_uart_main.o: ..\Program\QCopterMV_RS232.h
