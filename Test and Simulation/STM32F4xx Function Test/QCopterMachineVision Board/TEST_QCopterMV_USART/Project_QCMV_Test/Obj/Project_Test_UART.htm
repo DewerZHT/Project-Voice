@@ -3,9 +3,9 @@
 <title>Static Call Graph - [.\Obj\Project_Test_UART.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Obj\Project_Test_UART.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5.03 [Build 69]: Last Updated: Sat Aug 31 15:41:14 2013
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5.03 [Build 69]: Last Updated: Sat Aug 31 16:37:18 2013
 <BR><P>
-<H3>Maximum Stack Usage =        100 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
+<H3>Maximum Stack Usage =        116 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
 __rt_entry_main &rArr; main &rArr; RS232_Config &rArr; USART_Init &rArr; RCC_GetClocksFreq
 <P>
@@ -240,7 +240,7 @@ Global Symbols
 <P><STRONG><a name="[a8]"></a>__rt_entry_postsh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$00000009))
 
 <P><STRONG><a name="[6b]"></a>__rt_entry_main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$0000000D))
-<BR><BR>[Stack]<UL><LI>Max Depth = 100 + Unknown Stack Size
+<BR><BR>[Stack]<UL><LI>Max Depth = 116 + Unknown Stack Size
 <LI>Call Chain = __rt_entry_main &rArr; main &rArr; RS232_Config &rArr; USART_Init &rArr; RCC_GetClocksFreq
 </UL>
 <BR>[Calls]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
@@ -594,8 +594,8 @@ Global Symbols
 </UL>
 <P><STRONG><a name="[ab]"></a>SystemCoreClockUpdate</STRONG> (Thumb, 174 bytes, Stack size 16 bytes, system_stm32f4xx.o(.text), UNUSED)
 
-<P><STRONG><a name="[6c]"></a>main</STRONG> (Thumb, 46 bytes, Stack size 0 bytes, test_uart_main.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = main &rArr; RS232_Config &rArr; USART_Init &rArr; RCC_GetClocksFreq
+<P><STRONG><a name="[6c]"></a>main</STRONG> (Thumb, 66 bytes, Stack size 16 bytes, test_uart_main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 116<LI>Call Chain = main &rArr; RS232_Config &rArr; USART_Init &rArr; RCC_GetClocksFreq
 </UL>
 <BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RS232_SendStr
 <LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RS232_Config
@@ -845,7 +845,7 @@ Global Symbols
 <LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[74]"></a>RS232_Config</STRONG> (Thumb, 136 bytes, Stack size 32 bytes, qcoptermv_rs232.o(.text))
+<P><STRONG><a name="[74]"></a>RS232_Config</STRONG> (Thumb, 134 bytes, Stack size 32 bytes, qcoptermv_rs232.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = RS232_Config &rArr; USART_Init &rArr; RCC_GetClocksFreq
 </UL>
 <BR>[Calls]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Cmd

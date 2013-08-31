@@ -32,19 +32,19 @@ void RS232_Config( void )
 	GPIO_InitTypeDef GPIO_InitStruct;
 	USART_InitTypeDef USART_InitStruct;
 
-  RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOB,  ENABLE);
-	RCC_APB1PeriphClockCmd(RCC_APB1Periph_USART3, ENABLE);
+  RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA,  ENABLE);
+	RCC_APB1PeriphClockCmd(RCC_APB1Periph_USART2, ENABLE);
 
-	GPIO_PinAFConfig(GPIOB, GPIO_PinSource10, GPIO_AF_USART3);
-	GPIO_PinAFConfig(GPIOB, GPIO_PinSource11, GPIO_AF_USART3);
+	GPIO_PinAFConfig(GPIOB, GPIO_PinSource2, GPIO_AF_USART2);
+	GPIO_PinAFConfig(GPIOB, GPIO_PinSource3, GPIO_AF_USART2);
 
- 	/* USART3 Tx PB10 */	/* USART3 Rx PB11 */
-	GPIO_InitStruct.GPIO_Pin = GPIO_Pin_10 | GPIO_Pin_11;
+ 	/* USART3 Tx PA2 */	/* USART3 Rx PA3 */
+	GPIO_InitStruct.GPIO_Pin = GPIO_Pin_2 | GPIO_Pin_3;
 	GPIO_InitStruct.GPIO_Mode = GPIO_Mode_AF;
 	GPIO_InitStruct.GPIO_OType = GPIO_OType_PP;
 	GPIO_InitStruct.GPIO_PuPd = GPIO_PuPd_UP;
 	GPIO_InitStruct.GPIO_Speed = GPIO_Speed_50MHz;
-	GPIO_Init(GPIOB, &GPIO_InitStruct);
+	GPIO_Init(GPIOA, &GPIO_InitStruct);
 
 	USART_InitStruct.USART_BaudRate = 9600;
 	USART_InitStruct.USART_WordLength = USART_WordLength_8b;
@@ -52,11 +52,11 @@ void RS232_Config( void )
 	USART_InitStruct.USART_Parity = USART_Parity_No;
 	USART_InitStruct.USART_HardwareFlowControl = USART_HardwareFlowControl_None;
 	USART_InitStruct.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;
-	USART_Init(USART3, &USART_InitStruct);
-	USART_Cmd(USART3, ENABLE);
+	USART_Init(USART2, &USART_InitStruct);
+	USART_Cmd(USART2, ENABLE);
 	
 	// initial at line one column 1
-	RS232_SendStr(USART3, "\r");
+	RS232_SendStr(USART2, (u8*) "\r");
 	
 }
 

@@ -4,7 +4,7 @@
 <h1>µVision Build Log</h1>
 <h2>Project:</h2>
 C:\Users\David Wu\Documents\GitHub\Project-Voice\Test and Simulation\STM32F4xx Function Test\QCopterMachineVision Board\TEST_QCopterMV_USART\Project_QCMV_Test\Project_Test_UART.uvproj
-Project File Date:  08/30/2013
+Project File Date:  08/31/2013
 
 <h2>Output:</h2>
 Rebuild target 'Test_QCopterMV'
@@ -15,56 +15,10 @@ compiling stm32f4xx_rcc.c...
 compiling stm32f4xx_gpio.c...
 compiling stm32f4xx_usart.c...
 compiling stm32f4_delay.c...
-compiling stm32f4_usart.c...
 compiling QCopterMV_LED.c...
 compiling QCopterMV_RS232.c...
 linking...
-Program Size: Code=4384 RO-data=424 RW-data=36 ZI-data=1636  
-".\Obj\Project_Test_UART.axf" - 0 Error(s), 0 Warning(s).
-Rebuild target 'Test_QCopterMV'
-assembling startup_stm32f4xx.s...
-compiling system_stm32f4xx.c...
-compiling Test_UART_Main.c...
-compiling stm32f4xx_rcc.c...
-compiling stm32f4xx_gpio.c...
-compiling stm32f4xx_usart.c...
-compiling stm32f4_delay.c...
-compiling QCopterMV_LED.c...
-compiling QCopterMV_RS232.c...
-linking...
-Program Size: Code=4384 RO-data=424 RW-data=36 ZI-data=1636  
-".\Obj\Project_Test_UART.axf" - 0 Error(s), 0 Warning(s).
-Rebuild target 'Test_QCopterMV'
-assembling startup_stm32f4xx.s...
-compiling system_stm32f4xx.c...
-compiling Test_UART_Main.c...
-compiling stm32f4xx_rcc.c...
-compiling stm32f4xx_gpio.c...
-compiling stm32f4xx_usart.c...
-compiling stm32f4_delay.c...
-compiling QCopterMV_LED.c...
-compiling QCopterMV_RS232.c...
-linking...
-Program Size: Code=4420 RO-data=424 RW-data=36 ZI-data=1636  
-".\Obj\Project_Test_UART.axf" - 0 Error(s), 0 Warning(s).
-compiling Test_UART_Main.c...
-..\Program\Test_UART_Main.c(34): warning:  #223-D: function "PCO" declared implicitly
-..\Program\Test_UART_Main.c(34): error:  #137: expression must be a modifiable lvalue
-..\Program\Test_UART_Main.c - 1 Error(s), 1 Warning(s).
-compiling Test_UART_Main.c...
-..\Program\Test_UART_Main.c - 0 Error(s), 0 Warning(s).
-Rebuild target 'Test_QCopterMV'
-assembling startup_stm32f4xx.s...
-compiling system_stm32f4xx.c...
-compiling Test_UART_Main.c...
-compiling stm32f4xx_rcc.c...
-compiling stm32f4xx_gpio.c...
-compiling stm32f4xx_usart.c...
-compiling stm32f4_delay.c...
-compiling QCopterMV_LED.c...
-compiling QCopterMV_RS232.c...
-linking...
-Program Size: Code=4444 RO-data=424 RW-data=36 ZI-data=1636  
+Program Size: Code=4484 RO-data=424 RW-data=36 ZI-data=1636  
 ".\Obj\Project_Test_UART.axf" - 0 Error(s), 0 Warning(s).
 Load "C:\\Users\\David Wu\\Documents\\GitHub\\Project-Voice\\Test and Simulation\\STM32F4xx Function Test\\QCopterMachineVision Board\\TEST_QCopterMV_USART\\Project_QCMV_Test\\Obj\\Project_Test_UART.axf" 
 Set JLink Project File to "C:\Users\David Wu\Documents\GitHub\Project-Voice\Test and Simulation\STM32F4xx Function Test\QCopterMachineVision Board\TEST_QCopterMV_USART\Project_QCMV_Test\JLinkSettings.ini"
@@ -90,361 +44,6 @@ Target info:
 ------------
 Device: STM32F407VG
 VTarget = 3.293V
-State of Pins: 
-TCK: 0, TDI: 0, TDO: 0, TMS: 1, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Erase Done.
-Programming Done.
-Verify OK.
-Application running ...
-Rebuild target 'Test_QCopterMV'
-assembling startup_stm32f4xx.s...
-compiling system_stm32f4xx.c...
-compiling Test_UART_Main.c...
-compiling stm32f4xx_rcc.c...
-compiling stm32f4xx_gpio.c...
-compiling stm32f4xx_usart.c...
-compiling stm32f4_delay.c...
-compiling QCopterMV_LED.c...
-compiling QCopterMV_RS232.c...
-linking...
-Program Size: Code=4464 RO-data=424 RW-data=36 ZI-data=1636  
-".\Obj\Project_Test_UART.axf" - 0 Error(s), 0 Warning(s).
-Rebuild target 'Test_QCopterMV'
-assembling startup_stm32f4xx.s...
-compiling system_stm32f4xx.c...
-compiling Test_UART_Main.c...
-compiling stm32f4xx_rcc.c...
-compiling stm32f4xx_gpio.c...
-compiling stm32f4xx_usart.c...
-compiling stm32f4_delay.c...
-compiling QCopterMV_LED.c...
-compiling QCopterMV_RS232.c...
-linking...
-Program Size: Code=4464 RO-data=424 RW-data=36 ZI-data=1636  
-".\Obj\Project_Test_UART.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\David Wu\\Documents\\GitHub\\Project-Voice\\Test and Simulation\\STM32F4xx Function Test\\QCopterMachineVision Board\\TEST_QCopterMV_USART\\Project_QCMV_Test\\Obj\\Project_Test_UART.axf" 
-Set JLink Project File to "C:\Users\David Wu\Documents\GitHub\Project-Voice\Test and Simulation\STM32F4xx Function Test\QCopterMachineVision Board\TEST_QCopterMV_USART\Project_QCMV_Test\JLinkSettings.ini"
-* JLink Info: Device "STM32F407VG" selected (1024 KB flash, 128 KB RAM).
- 
-JLink info:
-------------
-DLL: V4.68a, compiled Apr 12 2013 13:26:50
-Firmware: J-Link ARM V8 compiled Nov 14 2012 22:34:52
-Hardware: V8.00
-S/N : 168520 
-Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
- 
-* JLink Info: Found SWD-DP with ID 0x2BA01477
-* JLink Info: Found SWD-DP with ID 0x2BA01477
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M4 r0p1, Little endian.
-ROMTableAddr = 0xE00FF003
- 
-Target info:
-------------
-Device: STM32F407VG
-VTarget = 3.287V
-State of Pins: 
-TCK: 0, TDI: 0, TDO: 0, TMS: 1, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Erase Done.
-Programming Done.
-Verify OK.
-Application running ...
-Rebuild target 'Test_QCopterMV'
-assembling startup_stm32f4xx.s...
-compiling system_stm32f4xx.c...
-compiling Test_UART_Main.c...
-compiling stm32f4xx_rcc.c...
-compiling stm32f4xx_gpio.c...
-compiling stm32f4xx_usart.c...
-compiling stm32f4_delay.c...
-compiling QCopterMV_LED.c...
-compiling QCopterMV_RS232.c...
-linking...
-Program Size: Code=4472 RO-data=424 RW-data=36 ZI-data=1636  
-".\Obj\Project_Test_UART.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\David Wu\\Documents\\GitHub\\Project-Voice\\Test and Simulation\\STM32F4xx Function Test\\QCopterMachineVision Board\\TEST_QCopterMV_USART\\Project_QCMV_Test\\Obj\\Project_Test_UART.axf" 
-Set JLink Project File to "C:\Users\David Wu\Documents\GitHub\Project-Voice\Test and Simulation\STM32F4xx Function Test\QCopterMachineVision Board\TEST_QCopterMV_USART\Project_QCMV_Test\JLinkSettings.ini"
-* JLink Info: Device "STM32F407VG" selected (1024 KB flash, 128 KB RAM).
- 
-JLink info:
-------------
-DLL: V4.68a, compiled Apr 12 2013 13:26:50
-Firmware: J-Link ARM V8 compiled Nov 14 2012 22:34:52
-Hardware: V8.00
-S/N : 168520 
-Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
- 
-* JLink Info: Found SWD-DP with ID 0x2BA01477
-* JLink Info: Found SWD-DP with ID 0x2BA01477
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M4 r0p1, Little endian.
-ROMTableAddr = 0xE00FF003
- 
-Target info:
-------------
-Device: STM32F407VG
-VTarget = 3.287V
-State of Pins: 
-TCK: 0, TDI: 0, TDO: 0, TMS: 1, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Erase Done.
-Programming Done.
-Verify OK.
-Application running ...
-compiling QCopterMV_RS232.c...
-..\Program\QCopterMV_RS232.c - 0 Error(s), 0 Warning(s).
-Rebuild target 'Test_QCopterMV'
-assembling startup_stm32f4xx.s...
-compiling system_stm32f4xx.c...
-compiling Test_UART_Main.c...
-compiling stm32f4xx_rcc.c...
-compiling stm32f4xx_gpio.c...
-compiling stm32f4xx_usart.c...
-compiling stm32f4_delay.c...
-compiling QCopterMV_LED.c...
-compiling QCopterMV_RS232.c...
-linking...
-Program Size: Code=4472 RO-data=424 RW-data=36 ZI-data=1636  
-".\Obj\Project_Test_UART.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\David Wu\\Documents\\GitHub\\Project-Voice\\Test and Simulation\\STM32F4xx Function Test\\QCopterMachineVision Board\\TEST_QCopterMV_USART\\Project_QCMV_Test\\Obj\\Project_Test_UART.axf" 
-Set JLink Project File to "C:\Users\David Wu\Documents\GitHub\Project-Voice\Test and Simulation\STM32F4xx Function Test\QCopterMachineVision Board\TEST_QCopterMV_USART\Project_QCMV_Test\JLinkSettings.ini"
-* JLink Info: Device "STM32F407VG" selected (1024 KB flash, 128 KB RAM).
- 
-JLink info:
-------------
-DLL: V4.68a, compiled Apr 12 2013 13:26:50
-Firmware: J-Link ARM V8 compiled Nov 14 2012 22:34:52
-Hardware: V8.00
-S/N : 168520 
-Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
- 
-* JLink Info: Found SWD-DP with ID 0x2BA01477
-* JLink Info: Found SWD-DP with ID 0x2BA01477
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M4 r0p1, Little endian.
-ROMTableAddr = 0xE00FF003
- 
-Target info:
-------------
-Device: STM32F407VG
-VTarget = 3.287V
-State of Pins: 
-TCK: 0, TDI: 0, TDO: 0, TMS: 1, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Erase Done.
-Programming Done.
-Verify OK.
-Application running ...
-compiling QCopterMV_RS232.c...
-..\Program\QCopterMV_RS232.c - 0 Error(s), 0 Warning(s).
-Rebuild target 'Test_QCopterMV'
-assembling startup_stm32f4xx.s...
-compiling system_stm32f4xx.c...
-compiling Test_UART_Main.c...
-compiling stm32f4xx_rcc.c...
-compiling stm32f4xx_gpio.c...
-compiling stm32f4xx_usart.c...
-compiling stm32f4_delay.c...
-compiling QCopterMV_LED.c...
-compiling QCopterMV_RS232.c...
-linking...
-Program Size: Code=4480 RO-data=424 RW-data=36 ZI-data=1636  
-".\Obj\Project_Test_UART.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\David Wu\\Documents\\GitHub\\Project-Voice\\Test and Simulation\\STM32F4xx Function Test\\QCopterMachineVision Board\\TEST_QCopterMV_USART\\Project_QCMV_Test\\Obj\\Project_Test_UART.axf" 
-Set JLink Project File to "C:\Users\David Wu\Documents\GitHub\Project-Voice\Test and Simulation\STM32F4xx Function Test\QCopterMachineVision Board\TEST_QCopterMV_USART\Project_QCMV_Test\JLinkSettings.ini"
-* JLink Info: Device "STM32F407VG" selected (1024 KB flash, 128 KB RAM).
- 
-JLink info:
-------------
-DLL: V4.68a, compiled Apr 12 2013 13:26:50
-Firmware: J-Link ARM V8 compiled Nov 14 2012 22:34:52
-Hardware: V8.00
-S/N : 168520 
-Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
- 
-* JLink Info: Found SWD-DP with ID 0x2BA01477
-* JLink Info: Found SWD-DP with ID 0x2BA01477
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M4 r0p1, Little endian.
-ROMTableAddr = 0xE00FF003
- 
-Target info:
-------------
-Device: STM32F407VG
-VTarget = 3.287V
-State of Pins: 
-TCK: 0, TDI: 0, TDO: 0, TMS: 1, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Erase Done.
-Programming Done.
-Verify OK.
-Application running ...
-Rebuild target 'Test_QCopterMV'
-assembling startup_stm32f4xx.s...
-compiling system_stm32f4xx.c...
-compiling Test_UART_Main.c...
-compiling stm32f4xx_rcc.c...
-compiling stm32f4xx_gpio.c...
-compiling stm32f4xx_usart.c...
-compiling stm32f4_delay.c...
-compiling QCopterMV_LED.c...
-compiling QCopterMV_RS232.c...
-linking...
-Program Size: Code=4492 RO-data=424 RW-data=36 ZI-data=1636  
-".\Obj\Project_Test_UART.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\David Wu\\Documents\\GitHub\\Project-Voice\\Test and Simulation\\STM32F4xx Function Test\\QCopterMachineVision Board\\TEST_QCopterMV_USART\\Project_QCMV_Test\\Obj\\Project_Test_UART.axf" 
-Set JLink Project File to "C:\Users\David Wu\Documents\GitHub\Project-Voice\Test and Simulation\STM32F4xx Function Test\QCopterMachineVision Board\TEST_QCopterMV_USART\Project_QCMV_Test\JLinkSettings.ini"
-* JLink Info: Device "STM32F407VG" selected (1024 KB flash, 128 KB RAM).
- 
-JLink info:
-------------
-DLL: V4.68a, compiled Apr 12 2013 13:26:50
-Firmware: J-Link ARM V8 compiled Nov 14 2012 22:34:52
-Hardware: V8.00
-S/N : 168520 
-Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
- 
-* JLink Info: Found SWD-DP with ID 0x2BA01477
-* JLink Info: Found SWD-DP with ID 0x2BA01477
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M4 r0p1, Little endian.
-ROMTableAddr = 0xE00FF003
- 
-Target info:
-------------
-Device: STM32F407VG
-VTarget = 3.287V
-State of Pins: 
-TCK: 0, TDI: 0, TDO: 0, TMS: 1, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Erase Done.
-Programming Done.
-Verify OK.
-Application running ...
-Rebuild target 'Test_QCopterMV'
-assembling startup_stm32f4xx.s...
-compiling system_stm32f4xx.c...
-compiling Test_UART_Main.c...
-compiling stm32f4xx_rcc.c...
-compiling stm32f4xx_gpio.c...
-compiling stm32f4xx_usart.c...
-compiling stm32f4_delay.c...
-compiling QCopterMV_LED.c...
-compiling QCopterMV_RS232.c...
-linking...
-Program Size: Code=4488 RO-data=424 RW-data=36 ZI-data=1636  
-".\Obj\Project_Test_UART.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\David Wu\\Documents\\GitHub\\Project-Voice\\Test and Simulation\\STM32F4xx Function Test\\QCopterMachineVision Board\\TEST_QCopterMV_USART\\Project_QCMV_Test\\Obj\\Project_Test_UART.axf" 
-Set JLink Project File to "C:\Users\David Wu\Documents\GitHub\Project-Voice\Test and Simulation\STM32F4xx Function Test\QCopterMachineVision Board\TEST_QCopterMV_USART\Project_QCMV_Test\JLinkSettings.ini"
-* JLink Info: Device "STM32F407VG" selected (1024 KB flash, 128 KB RAM).
- 
-JLink info:
-------------
-DLL: V4.68a, compiled Apr 12 2013 13:26:50
-Firmware: J-Link ARM V8 compiled Nov 14 2012 22:34:52
-Hardware: V8.00
-S/N : 168520 
-Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
- 
-* JLink Info: Found SWD-DP with ID 0x2BA01477
-* JLink Info: Found SWD-DP with ID 0x2BA01477
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M4 r0p1, Little endian.
-ROMTableAddr = 0xE00FF003
- 
-Target info:
-------------
-Device: STM32F407VG
-VTarget = 3.293V
-State of Pins: 
-TCK: 0, TDI: 0, TDO: 0, TMS: 1, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Erase Done.
-Programming Done.
-Verify OK.
-Application running ...
-compiling QCopterMV_RS232.c...
-..\Program\QCopterMV_RS232.c - 0 Error(s), 0 Warning(s).
-Rebuild target 'Test_QCopterMV'
-assembling startup_stm32f4xx.s...
-compiling system_stm32f4xx.c...
-compiling Test_UART_Main.c...
-compiling stm32f4xx_rcc.c...
-compiling stm32f4xx_gpio.c...
-compiling stm32f4xx_usart.c...
-compiling stm32f4_delay.c...
-compiling QCopterMV_LED.c...
-compiling QCopterMV_RS232.c...
-linking...
-Program Size: Code=4488 RO-data=424 RW-data=36 ZI-data=1636  
-".\Obj\Project_Test_UART.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\David Wu\\Documents\\GitHub\\Project-Voice\\Test and Simulation\\STM32F4xx Function Test\\QCopterMachineVision Board\\TEST_QCopterMV_USART\\Project_QCMV_Test\\Obj\\Project_Test_UART.axf" 
-Set JLink Project File to "C:\Users\David Wu\Documents\GitHub\Project-Voice\Test and Simulation\STM32F4xx Function Test\QCopterMachineVision Board\TEST_QCopterMV_USART\Project_QCMV_Test\JLinkSettings.ini"
-* JLink Info: Device "STM32F407VG" selected (1024 KB flash, 128 KB RAM).
- 
-JLink info:
-------------
-DLL: V4.68a, compiled Apr 12 2013 13:26:50
-Firmware: J-Link ARM V8 compiled Nov 14 2012 22:34:52
-Hardware: V8.00
-S/N : 168520 
-Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
- 
-* JLink Info: Found SWD-DP with ID 0x2BA01477
-* JLink Info: Found SWD-DP with ID 0x2BA01477
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M4 r0p1, Little endian.
-ROMTableAddr = 0xE00FF003
- 
-Target info:
-------------
-Device: STM32F407VG
-VTarget = 3.287V
 State of Pins: 
 TCK: 0, TDI: 0, TDO: 0, TMS: 1, TRES: 1, TRST: 1
 Hardware-Breakpoints: 6
@@ -469,6 +68,235 @@ compiling QCopterMV_RS232.c...
 linking...
 Program Size: Code=4476 RO-data=424 RW-data=36 ZI-data=1636  
 ".\Obj\Project_Test_UART.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\David Wu\\Documents\\GitHub\\Project-Voice\\Test and Simulation\\STM32F4xx Function Test\\QCopterMachineVision Board\\TEST_QCopterMV_USART\\Project_QCMV_Test\\Obj\\Project_Test_UART.axf" 
+Set JLink Project File to "C:\Users\David Wu\Documents\GitHub\Project-Voice\Test and Simulation\STM32F4xx Function Test\QCopterMachineVision Board\TEST_QCopterMV_USART\Project_QCMV_Test\JLinkSettings.ini"
+* JLink Info: Device "STM32F407VG" selected (1024 KB flash, 128 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.68a, compiled Apr 12 2013 13:26:50
+Firmware: J-Link ARM V8 compiled Nov 14 2012 22:34:52
+Hardware: V8.00
+S/N : 168520 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M4 r0p1, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F407VG
+VTarget = 3.293V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 0, TMS: 1, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+compiling Test_UART_Main.c...
+..\Program\Test_UART_Main.c(48): warning:  #223-D: function "itoa" declared implicitly
+..\Program\Test_UART_Main.c - 0 Error(s), 1 Warning(s).
+Rebuild target 'Test_QCopterMV'
+assembling startup_stm32f4xx.s...
+compiling system_stm32f4xx.c...
+compiling Test_UART_Main.c...
+..\Program\Test_UART_Main.c(48): warning:  #223-D: function "itoa" declared implicitly
+compiling stm32f4xx_rcc.c...
+compiling stm32f4xx_gpio.c...
+compiling stm32f4xx_usart.c...
+compiling stm32f4_delay.c...
+compiling QCopterMV_LED.c...
+compiling QCopterMV_RS232.c...
+linking...
+.\Obj\Project_Test_UART.axf: Error: L6218E: Undefined symbol itoa (referred from test_uart_main.o).
+Target not created
+Rebuild target 'Test_QCopterMV'
+assembling startup_stm32f4xx.s...
+compiling system_stm32f4xx.c...
+compiling Test_UART_Main.c...
+..\Program\Test_UART_Main.c(31): warning:  #177-D: variable "buf" was declared but never referenced
+compiling stm32f4xx_rcc.c...
+compiling stm32f4xx_gpio.c...
+compiling stm32f4xx_usart.c...
+compiling stm32f4_delay.c...
+compiling QCopterMV_LED.c...
+compiling QCopterMV_RS232.c...
+linking...
+Program Size: Code=4496 RO-data=424 RW-data=36 ZI-data=1636  
+".\Obj\Project_Test_UART.axf" - 0 Error(s), 1 Warning(s).
+Load "C:\\Users\\David Wu\\Documents\\GitHub\\Project-Voice\\Test and Simulation\\STM32F4xx Function Test\\QCopterMachineVision Board\\TEST_QCopterMV_USART\\Project_QCMV_Test\\Obj\\Project_Test_UART.axf" 
+Set JLink Project File to "C:\Users\David Wu\Documents\GitHub\Project-Voice\Test and Simulation\STM32F4xx Function Test\QCopterMachineVision Board\TEST_QCopterMV_USART\Project_QCMV_Test\JLinkSettings.ini"
+* JLink Info: Device "STM32F407VG" selected (1024 KB flash, 128 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.68a, compiled Apr 12 2013 13:26:50
+Firmware: J-Link ARM V8 compiled Nov 14 2012 22:34:52
+Hardware: V8.00
+S/N : 168520 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: STM32F2xxx/STM32F4xxx: Can not attach to CPU. Trying connect under reset.
+Load "C:\\Users\\David Wu\\Documents\\GitHub\\Project-Voice\\Test and Simulation\\STM32F4xx Function Test\\QCopterMachineVision Board\\TEST_QCopterMV_USART\\Project_QCMV_Test\\Obj\\Project_Test_UART.axf" 
+Set JLink Project File to "C:\Users\David Wu\Documents\GitHub\Project-Voice\Test and Simulation\STM32F4xx Function Test\QCopterMachineVision Board\TEST_QCopterMV_USART\Project_QCMV_Test\JLinkSettings.ini"
+* JLink Info: Device "STM32F407VG" selected (1024 KB flash, 128 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.68a, compiled Apr 12 2013 13:26:50
+Firmware: J-Link ARM V8 compiled Nov 14 2012 22:34:52
+Hardware: V8.00
+S/N : 168520 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M4 r0p1, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F407VG
+VTarget = 3.287V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 0, TMS: 1, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Rebuild target 'Test_QCopterMV'
+assembling startup_stm32f4xx.s...
+compiling system_stm32f4xx.c...
+compiling Test_UART_Main.c...
+..\Program\Test_UART_Main.c(31): warning:  #177-D: variable "buf" was declared but never referenced
+compiling stm32f4xx_rcc.c...
+compiling stm32f4xx_gpio.c...
+compiling stm32f4xx_usart.c...
+compiling stm32f4_delay.c...
+compiling QCopterMV_LED.c...
+compiling QCopterMV_RS232.c...
+linking...
+Program Size: Code=4496 RO-data=424 RW-data=36 ZI-data=1636  
+".\Obj\Project_Test_UART.axf" - 0 Error(s), 1 Warning(s).
+Load "C:\\Users\\David Wu\\Documents\\GitHub\\Project-Voice\\Test and Simulation\\STM32F4xx Function Test\\QCopterMachineVision Board\\TEST_QCopterMV_USART\\Project_QCMV_Test\\Obj\\Project_Test_UART.axf" 
+Set JLink Project File to "C:\Users\David Wu\Documents\GitHub\Project-Voice\Test and Simulation\STM32F4xx Function Test\QCopterMachineVision Board\TEST_QCopterMV_USART\Project_QCMV_Test\JLinkSettings.ini"
+* JLink Info: Device "STM32F407VG" selected (1024 KB flash, 128 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.68a, compiled Apr 12 2013 13:26:50
+Firmware: J-Link ARM V8 compiled Nov 14 2012 22:34:52
+Hardware: V8.00
+S/N : 168520 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M4 r0p1, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F407VG
+VTarget = 3.287V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 0, TMS: 1, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+compiling Test_UART_Main.c...
+..\Program\Test_UART_Main.c(31): warning:  #177-D: variable "buf" was declared but never referenced
+..\Program\Test_UART_Main.c - 0 Error(s), 1 Warning(s).
+Rebuild target 'Test_QCopterMV'
+assembling startup_stm32f4xx.s...
+compiling system_stm32f4xx.c...
+compiling Test_UART_Main.c...
+..\Program\Test_UART_Main.c(31): warning:  #177-D: variable "buf" was declared but never referenced
+compiling stm32f4xx_rcc.c...
+compiling stm32f4xx_gpio.c...
+compiling stm32f4xx_usart.c...
+compiling stm32f4_delay.c...
+compiling QCopterMV_LED.c...
+compiling QCopterMV_RS232.c...
+linking...
+Program Size: Code=4496 RO-data=424 RW-data=36 ZI-data=1636  
+".\Obj\Project_Test_UART.axf" - 0 Error(s), 1 Warning(s).
+Load "C:\\Users\\David Wu\\Documents\\GitHub\\Project-Voice\\Test and Simulation\\STM32F4xx Function Test\\QCopterMachineVision Board\\TEST_QCopterMV_USART\\Project_QCMV_Test\\Obj\\Project_Test_UART.axf" 
+Set JLink Project File to "C:\Users\David Wu\Documents\GitHub\Project-Voice\Test and Simulation\STM32F4xx Function Test\QCopterMachineVision Board\TEST_QCopterMV_USART\Project_QCMV_Test\JLinkSettings.ini"
+* JLink Info: Device "STM32F407VG" selected (1024 KB flash, 128 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.68a, compiled Apr 12 2013 13:26:50
+Firmware: J-Link ARM V8 compiled Nov 14 2012 22:34:52
+Hardware: V8.00
+S/N : 168520 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M4 r0p1, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F407VG
+VTarget = 3.287V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 0, TMS: 1, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Rebuild target 'Test_QCopterMV'
+assembling startup_stm32f4xx.s...
+compiling system_stm32f4xx.c...
+compiling Test_UART_Main.c...
+..\Program\Test_UART_Main.c(31): warning:  #177-D: variable "buf" was declared but never referenced
+compiling stm32f4xx_rcc.c...
+compiling stm32f4xx_gpio.c...
+compiling stm32f4xx_usart.c...
+compiling stm32f4_delay.c...
+compiling QCopterMV_LED.c...
+compiling QCopterMV_RS232.c...
+linking...
+Program Size: Code=4500 RO-data=424 RW-data=36 ZI-data=1636  
+".\Obj\Project_Test_UART.axf" - 0 Error(s), 1 Warning(s).
 Load "C:\\Users\\David Wu\\Documents\\GitHub\\Project-Voice\\Test and Simulation\\STM32F4xx Function Test\\QCopterMachineVision Board\\TEST_QCopterMV_USART\\Project_QCMV_Test\\Obj\\Project_Test_UART.axf" 
 Set JLink Project File to "C:\Users\David Wu\Documents\GitHub\Project-Voice\Test and Simulation\STM32F4xx Function Test\QCopterMachineVision Board\TEST_QCopterMV_USART\Project_QCMV_Test\JLinkSettings.ini"
 * JLink Info: Device "STM32F407VG" selected (1024 KB flash, 128 KB RAM).
