@@ -35,8 +35,8 @@ void RS232_Config( void )
   RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA,  ENABLE);
 	RCC_APB1PeriphClockCmd(RCC_APB1Periph_USART2, ENABLE);
 
-	GPIO_PinAFConfig(GPIOB, GPIO_PinSource2, GPIO_AF_USART2);
-	GPIO_PinAFConfig(GPIOB, GPIO_PinSource3, GPIO_AF_USART2);
+	GPIO_PinAFConfig(GPIOA, GPIO_PinSource2, GPIO_AF_USART2);
+	GPIO_PinAFConfig(GPIOA, GPIO_PinSource3, GPIO_AF_USART2);
 
  	/* USART3 Tx PA2 */	/* USART3 Rx PA3 */
 	GPIO_InitStruct.GPIO_Pin = GPIO_Pin_2 | GPIO_Pin_3;
@@ -134,5 +134,4 @@ void RS232_VisualScope( USART_TypeDef* USARTx, u8 *pWord, u16 Len )
 	
 } // END RS232_VisualScope
 
-/*=====================================================================================================*/
-/*=====================================================================================================*/
+

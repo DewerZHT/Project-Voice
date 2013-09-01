@@ -37,7 +37,7 @@ int main(void)
 	// QCopter MachineVision Config
 	RS232_Config();
 	
-	RS232_SendStr(USART2, (u8*) "Hello 1 !\n\r");
+	RS232_SendStr(USART2, (u8*) "Hello!\n\r");
 	RS232_SendStr(USART2, (u8*) "STM32F4 QCMV UART Test.\n\r");
 	LED_G = ~LED_G;
 

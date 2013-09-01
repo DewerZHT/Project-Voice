@@ -457,6 +457,11 @@
               <FileType>1</FileType>
               <FilePath>..\Program\QCopterMV_RS232.c</FilePath>
             </File>
+            <File>
+              <FileName>StringConvert.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Program\StringConvert.c</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>
