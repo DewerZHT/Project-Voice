@@ -250,7 +250,7 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1</TopLine>
+      <TopLine>16</TopLine>
       <CurrentLine>1</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\Program\Test_UART_Main.c</PathWithFileName>
@@ -360,10 +360,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>27</ColumnNumber>
+      <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>16</TopLine>
-      <CurrentLine>17</CurrentLine>
+      <TopLine>61</TopLine>
+      <CurrentLine>16</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\Program\QCopterMV_RS232.c</PathWithFileName>
       <FilenameWithoutPath>QCopterMV_RS232.c</FilenameWithoutPath>
@@ -376,10 +376,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>8</ColumnNumber>
+      <ColumnNumber>12</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>19</TopLine>
-      <CurrentLine>32</CurrentLine>
+      <CurrentLine>27</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\Program\StringConvert.c</PathWithFileName>
       <FilenameWithoutPath>StringConvert.c</FilenameWithoutPath>

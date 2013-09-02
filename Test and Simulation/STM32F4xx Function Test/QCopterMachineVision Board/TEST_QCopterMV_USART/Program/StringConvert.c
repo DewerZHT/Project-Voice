@@ -1,6 +1,6 @@
 /**
  * @File    StringConvert.c
- * @Date    2013.09.01 Sunday
+ * @Date    2013.09.02 Monday
  * @Author  Wu, Chen-Hao
  *					CYCU ICE, Lab801; AutoControl Club
  * @Version V1
@@ -13,13 +13,15 @@
 /* Includes ------------------------------------------------------------------*/
 #include "StringConvert.h"
  
-char* int2str(int value, int NumBase)
+char* int2str(const int value, int numBase)
 {
-	unsigned char ConvertFlag = 0;
-	unsigned char NumCNT = 0;
+	bool convertFlag = true;
+	unsigned int  numBuf[MAX_SIZE] = {0};
+	unsigned char numCNT = 0;
+	unsigned char numOffset = 1;
 	char* convertStr[MAX_SIZE] = {0};
 	
-	switch(NumBase) {
+	switch(numBase) {
 		
 		case Binary :
 			break;
@@ -28,7 +30,8 @@ char* int2str(int value, int NumBase)
 			break;
 		
 		case Hexadecimal :
-			for(NumCNT = 0; NumCNT < ConvertFlag; NumCNT++) {
+			for(numCNT = 0; convertFlag == true ; numCNT++) {
+				numBuf[numCNT] = value / numOffset;
 				
 			} // END for
 			
@@ -44,14 +47,20 @@ char* int2str(int value, int NumBase)
 
 } // END num2str
 
-int str2int(void)
+char* float2str(const float value, int NumBase)
+{
+	
+
+} // END float2str
+
+int str2int(const char* str)
 {
 	
 	
 } // END str2int
 
-int str2float(void)
+float str2float(const char* str)
 {
 	
 	
-}
+} // END str2float

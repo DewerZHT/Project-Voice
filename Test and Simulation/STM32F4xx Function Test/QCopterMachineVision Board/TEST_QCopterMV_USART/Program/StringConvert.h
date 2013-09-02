@@ -22,6 +22,11 @@
 #include <stm32f4xx.h>
 		
 #define MAX_SIZE 200
+		
+// Define boolean
+#define bool	_Bool
+#define true	1
+#define false	0
 
 enum NumberBase {
 
@@ -31,6 +36,12 @@ enum NumberBase {
 	Hexadecimal = 16
 
 };
+
+// Function declaration
+char* int2str(const int value, int NumBase);
+char* float2str(const float value, int NumBase);
+int str2int(const char* str);
+float str2float(const char* str);
 	 
 #ifdef __cplusplus
 	}
