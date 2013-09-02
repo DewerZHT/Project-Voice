@@ -5,8 +5,21 @@ The voice project of Embedded System use STM32
 
 * wiki website : https://github.com/DewerZHT/Project-Voice.wiki.git
 
-Reference document
+Reference projects
 ==================
+* Hom
+  * QCopterMachineVision - github.com/Hom19910422
+
+Reference websites
+==================
+* Audio & Voice
+  * PassLab  - https://passlabs.com
+
+* Embedded OS
+  * FreeRTOS - www.freertos.org 
+
+Reference documents
+===================
 * From ST :
   * AN 3126 - Audio and waveform generation using the DAC
               in STM32 microcontroller families
