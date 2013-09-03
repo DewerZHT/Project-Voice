@@ -32,14 +32,17 @@ enum NumberBase {
 
 	Binary      = 2,
 	Octal       = 8,
-	Integer     = 10,
-	Hexadecimal = 16
+	Decimal			= 10,
+	Hexadecimal = 16,
+	Integer     = 0
 
 };
 
+static char convertStr[MAX_SIZE] = {0};
+
 // Function declaration
-char* int2str(const int value, int NumBase);
-char* float2str(const float value, int NumBase);
+char* int2str(int value, int NumBase);
+char* float2str(float value, int NumBase);
 int str2int(const char* str);
 float str2float(const char* str);
 	 
@@ -48,4 +51,3 @@ float str2float(const char* str);
 #endif
 	 
 #endif
- 

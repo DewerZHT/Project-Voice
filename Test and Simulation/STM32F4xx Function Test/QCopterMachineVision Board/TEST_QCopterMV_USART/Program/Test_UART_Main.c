@@ -16,6 +16,7 @@
 #include <stm32f4xx.h>
 
 // STM32F4xx Config library
+#include "stm32f4_delay.h"
 #include "stm32f4_gpio.h"
 
 // Standard C Library
@@ -25,10 +26,12 @@
 #include "QCopterMV_LED.h"
 #include "QCopterMV_RS232.h"
 
+// Data Convert
+#include "StringConvert.h"
+
 int main(void)
 {
-	unsigned char CNT = 0;
-	unsigned char buf[5] = {0};
+	unsigned int CNT = 0;
 	
 	// STM32F4 System Initial
 	SystemInit();
@@ -43,13 +46,15 @@ int main(void)
 
 	while(1) {
 		
-		if(CNT == 255) CNT = 0;
+		LED_G = ~LED_G;
 		
-// 		itoa(CNT, buf, 10);
-// 		RS232_SendStr(USART3, (u8*) " Counter = ");
-// 		RS232_SendStr(USART3,  buf);
-// 		RS232_SendStr(USART3, (u8*) "\n\r");
+		if(CNT == 32767) CNT = 0;
 		
+		RS232_SendStr(USART2, (u8*) " Counter = ");
+		RS232_SendStr(USART2, (u8*) int2str(CNT, Decimal));
+		RS232_SendStr(USART2, (u8*) "\n\r");
+		
+		delay_10ms(1);
 		CNT++;
 		
 	} // END while
