@@ -14,7 +14,13 @@
 #include "StringConvert.h"
 
 static char convertStr[MAX_SIZE] = {0};
- 
+
+/******************************************************************************
+ * @Function int2str
+ * @Brief    Convert integer numeric data to character string
+ *           with binary, octal, decimal, hex format.
+ *
+ **/
 char* int2str(int value, int numBase)
 {
 	unsigned char isNumEnd = false;
@@ -28,6 +34,13 @@ char* int2str(int value, int numBase)
 		case Octal :
 		case Decimal :
 		case Hexadecimal :
+			if(numBase == Binary) convertStr[0] = 'b';
+			else if (numBase == Octal) convertStr[0] = 'o';
+			else if (numBase == Decimal) convertStr[0] = 'd';
+			else if (numBase == Hexadecimal) convertStr[0] = 'h';
+		
+			convertStr[1] = '\'';
+		
 			for(numCNT = 0; isNumEnd == false ; numCNT++) {
 				
 				numBuf[numCNT] = value / numOffset;
@@ -44,69 +57,27 @@ char* int2str(int value, int numBase)
 			
 			for(numOffset = 0; numOffset < numCNT; numOffset++) {
 				
-				convertStr[numOffset] = numBuf[numCNT-numOffset-1] % (numBase);
+				convertStr[numOffset+2] = numBuf[numCNT-numOffset-1] % (numBase);
 				
-				if(convertStr[numOffset] > 9) {
+				if(convertStr[numOffset+2] > 9) {
 					
-					convertStr[numOffset] += (65 - 10); // 65 is 'A' ascii code
+					convertStr[numOffset+2] += (65 - 10); // 65 is 'A' ascii code
 					
 				} // END if convert data > 9
 				
 				else {
 					
-					convertStr[numOffset] += 48; // 48 is '0' ascii code
+					convertStr[numOffset+2] += 48; // 48 is '0' ascii code
 					
 				} // END else convert data <= 9
 				
 			} // END for all data convert to char
+
+			convertStr[numOffset+3] = '\0';
 			
 			break; // END Hexadecimal convert
 		
 		case Integer :
-			if(value<0) {
-				
-				convertStr[0] = '-';
-				value = (~value) + 1;
-				
-				for(numCNT=1; isNumEnd == false; numCNT++) {
-					
-					numBuf[numCNT-1] = ((u32)value) / numOffset;
-					if(numBuf[numCNT-1] == 0) isNumEnd = true;
-					numOffset = numOffset * 10;
-					
-				}
-				
-				for(numOffset=1; numOffset < numCNT+1; numOffset++) {
-					
-					convertStr[numCNT-numOffset+1] = numBuf[numOffset-1] - numBuf[numOffset]*10;
-					convertStr[numCNT-numOffset+1] += 48;
-					
-				}
-				
-				convertStr[numCNT+1] = '\0';
-				
-			} // END if value < 0
-			
-			else {
-				
-				for(numCNT=0; isNumEnd == false; numCNT++) {
-					
-					numBuf[numCNT] = value / numOffset;
-					if(numBuf[numCNT] == 0) isNumEnd = true;
-					numOffset = numOffset * 10;
-					
-				}
-				
-				for(numOffset=1; numOffset < numCNT+1; numOffset++) {
-					
-					convertStr[numCNT-numOffset-1] = numBuf[numOffset-1] - numBuf[numOffset]*10;
-					convertStr[numCNT-numOffset-1] += 48;
-					
-				}
-				
-				convertStr[numCNT] = '\0';
-			} // END else value >= 0
-			
 			break;
 		
 		default :
@@ -118,12 +89,22 @@ char* int2str(int value, int numBase)
 
 } // END num2str
 
+/******************************************************************************
+ * @Function float2str
+ * @Brief    Convert float numeric data to character string
+ *
+ **/
 char* float2str(float value, int NumBase)
 {
 	return convertStr;
 
 } // END float2str
 
+/******************************************************************************
+ * @Function str2int
+ * @Brief    Convert character string to integer 
+ *
+ **/
 int str2int(const char* str)
 {
 	int temp;
@@ -132,6 +113,11 @@ int str2int(const char* str)
 	
 } // END str2int
 
+/******************************************************************************
+ * @Function str2float
+ * @Brief    Convert character string to float
+ *
+ **/
 float str2float(const char* str)
 {
 	float temp;
