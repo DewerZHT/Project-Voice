@@ -1,6 +1,6 @@
 /**
  * @File    Test_UART_Main.c
- * @Date    2013.08.30 Firday
+ * @Date    2013.09.03 Tuesday
  * @Author  Wu, Chen-Hao
  *				  CYCU ICE, Lab801; AutoControl Club
  * @Version V3
@@ -51,10 +51,10 @@ int main(void)
 		if(CNT == 32767) CNT = 0;
 		
 		RS232_SendStr(USART2, (u8*) " Counter = ");
-		RS232_SendStr(USART2, (u8*) int2str(CNT, Decimal));
+		RS232_SendStr(USART2, (u8*) int2str(CNT, Hexadecimal));
 		RS232_SendStr(USART2, (u8*) "\n\r");
 		
-		delay_10ms(1);
+		delay_10ms(2);
 		CNT++;
 		
 	} // END while

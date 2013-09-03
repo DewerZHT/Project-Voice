@@ -20,7 +20,7 @@
 ### ADS-LD Output File: '.\Obj\Project_Test_UART.axf'
 ### ADS-LD Command File: '.\Obj\Project_Test_UART.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile '.\Obj\Project_Test_UART.lnp', Handle=0x00000E80
+### Creating CmdFile '.\Obj\Project_Test_UART.lnp', Handle=0x000014F4
 ### Writing '.lnp' file
 ### ADS-LD Command file '.\Obj\Project_Test_UART.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.

@@ -1,6 +1,6 @@
 /**
  * @File    StringConvert.h
- * @Date    2013.09.01 Sunday
+ * @Date    2013.09.03 Tuesday
  * @Author  Wu, Chen-Hao
  *					CYCU ICE, Lab801; AutoControl Club
  * @Version V1
@@ -37,8 +37,6 @@ enum NumberBase {
 	Integer     = 0
 
 };
-
-static char convertStr[MAX_SIZE] = {0};
 
 // Function declaration
 char* int2str(int value, int NumBase);
