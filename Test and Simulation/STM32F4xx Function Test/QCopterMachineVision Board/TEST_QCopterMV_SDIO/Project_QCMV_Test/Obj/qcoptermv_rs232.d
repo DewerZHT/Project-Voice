@@ -10,7 +10,10 @@
 .\obj\qcoptermv_rs232.o: ..\Program\stm32f4xx_conf.h
 .\obj\qcoptermv_rs232.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h
 .\obj\qcoptermv_rs232.o: ..\Libraries\CMSIS\stm32f4xx.h
+.\obj\qcoptermv_rs232.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h
+.\obj\qcoptermv_rs232.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dma.h
 .\obj\qcoptermv_rs232.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h
 .\obj\qcoptermv_rs232.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h
+.\obj\qcoptermv_rs232.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sdio.h
 .\obj\qcoptermv_rs232.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h
 .\obj\qcoptermv_rs232.o: ..\Program\QCopterMV_RS232.h

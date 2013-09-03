@@ -4,10 +4,9 @@
  * @Author  Wu, Chen-Hao
  *				  CYCU ICE, Lab801; AutoControl Club
  * @Version V3
- * @Brief   To test UART on QCopter - MachineVision Board,
- *          just send data out.
+ * @Brief   To test SDIO on QCopter - MachineVision Board,
  *
- * @Create  2013.08.30 Firday
+ * @Create  2013.09.03 Tuesday
  *
  **/
 

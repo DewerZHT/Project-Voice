@@ -9,6 +9,9 @@
 .\obj\system_stm32f4xx.o: ..\Program\stm32f4xx_conf.h
 .\obj\system_stm32f4xx.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h
 .\obj\system_stm32f4xx.o: ..\Libraries\CMSIS\stm32f4xx.h
+.\obj\system_stm32f4xx.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h
+.\obj\system_stm32f4xx.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dma.h
 .\obj\system_stm32f4xx.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h
 .\obj\system_stm32f4xx.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h
+.\obj\system_stm32f4xx.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sdio.h
 .\obj\system_stm32f4xx.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h
