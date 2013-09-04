@@ -1,0 +1,33 @@
+*** Creating Trace Output File '.\Obj\Project_Test_SDIO.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\obj\startup_stm32f4xx.o"'
+### List of Objects: adding '".\obj\system_stm32f4xx.o"'
+### List of Objects: adding '".\obj\misc.o"'
+### List of Objects: adding '".\obj\test_sdio_main.o"'
+### List of Objects: adding '".\obj\stm32f4xx_rcc.o"'
+### List of Objects: adding '".\obj\stm32f4xx_adc.o"'
+### List of Objects: adding '".\obj\stm32f4xx_gpio.o"'
+### List of Objects: adding '".\obj\stm32f4xx_sdio.o"'
+### List of Objects: adding '".\obj\stm32f4xx_usart.o"'
+### List of Objects: adding '".\obj\stm32f4xx_dma.o"'
+### List of Objects: adding '".\obj\stm32f4_delay.o"'
+### List of Objects: adding '".\obj\stm32f4_sdio.o"'
+### List of Objects: adding '".\obj\qcoptermv_led.o"'
+### List of Objects: adding '".\obj\qcoptermv_rs232.o"'
+### List of Objects: adding '".\obj\stringconvert.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M4.fp ".\obj\startup_stm32f4xx.o" ".\obj\system_stm32f4xx.o" ".\obj\misc.o" ".\obj\test_sdio_main.o" ".\obj\stm32f4xx_rcc.o" ".\obj\stm32f4xx_adc.o" ".\obj\stm32f4xx_gpio.o" ".\obj\stm32f4xx_sdio.o" ".\obj\stm32f4xx_usart.o" ".\obj\stm32f4xx_dma.o" ".\obj\stm32f4_delay.o" ".\obj\stm32f4_sdio.o" ".\obj\qcoptermv_led.o" ".\obj\qcoptermv_rs232.o" ".\obj\stringconvert.o" 
+--ro-base 0x08000000 --entry 0x08000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\List\Project_Test_SDIO.map" -o .\Obj\Project_Test_SDIO.axf### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\Obj\Project_Test_SDIO.axf'
+### ADS-LD Command File: '.\Obj\Project_Test_SDIO.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\Obj\Project_Test_SDIO.lnp', Handle=0x00000528
+### Writing '.lnp' file
+### ADS-LD Command file '.\Obj\Project_Test_SDIO.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

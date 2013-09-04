@@ -1,19 +1,4 @@
---cpu Cortex-M4.fp
-".\obj\startup_stm32f4xx.o"
-".\obj\system_stm32f4xx.o"
-".\obj\misc.o"
-".\obj\test_sdio_main.o"
-".\obj\stm32f4xx_rcc.o"
-".\obj\stm32f4xx_adc.o"
-".\obj\stm32f4xx_gpio.o"
-".\obj\stm32f4xx_sdio.o"
-".\obj\stm32f4xx_usart.o"
-".\obj\stm32f4xx_dma.o"
-".\obj\stm32f4_delay.o"
-".\obj\qcoptermv_led.o"
-".\obj\qcoptermv_rs232.o"
-".\obj\stringconvert.o"
-".\obj\stm32f4_sdio.o"
---ro-base 0x08000000 --entry 0x08000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols
---info sizes --info totals --info unused --info veneers
---list ".\List\Project_Test_SDIO.map" -o .\Obj\Project_Test_SDIO.axf
+--cpu Cortex-M4.fp ".\obj\startup_stm32f4xx.o" ".\obj\system_stm32f4xx.o" ".\obj\misc.o" ".\obj\test_sdio_main.o" ".\obj\stm32f4xx_rcc.o" ".\obj\stm32f4xx_adc.o" ".\obj\stm32f4xx_gpio.o" ".\obj\stm32f4xx_sdio.o" ".\obj\stm32f4xx_usart.o" ".\obj\stm32f4xx_dma.o" ".\obj\stm32f4_delay.o" ".\obj\stm32f4_sdio.o" ".\obj\qcoptermv_led.o" ".\obj\qcoptermv_rs232.o" ".\obj\stringconvert.o" 
+--ro-base 0x08000000 --entry 0x08000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\List\Project_Test_SDIO.map" -o .\Obj\Project_Test_SDIO.axf

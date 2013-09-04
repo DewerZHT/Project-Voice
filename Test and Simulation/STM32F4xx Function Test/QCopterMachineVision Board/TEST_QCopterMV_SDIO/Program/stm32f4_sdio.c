@@ -91,8 +91,8 @@
   *         SDIO_APP_CMD should be sent before sending these commands. 
   */
 #define SDIO_SEND_IF_COND               ((u32)0x00000008)
-/*=====================================================================================================*/
-/*=====================================================================================================*/
+
+/* Variables declaration -----------------------------------------------------*/
 static u32 CardType = SDIO_STD_CAPACITY_SD_CARD_V1_1;
 static u32 CSD_Tab[4], CID_Tab[4], RCA = 0;
 static u8 SDSTATUS_Tab[16];
@@ -115,15 +115,12 @@ static SD_Error SDEnWideBus(FunctionalState NewState);
 static SD_Error IsCardProgramming(u8 *pstatus);
 static SD_Error FindSCR(u16 rca, u32 *pscr);
 u8 convert_from_bytes_to_power_of_two(u16 NumberOfBytes);
-/*=====================================================================================================*/
-/*=====================================================================================================*
-**函數 : SD_DMA_TxConfig
-**功能 : 
-**輸入 : 
-**輸出 : 
-**使用 : 
-**=====================================================================================================*/
-/*=====================================================================================================*/
+
+/******************************************************************************
+ * @Function SD_DMA_TxConfig
+ * @Brief    SD card 
+ *
+ **/
 void SD_DMA_TxConfig( u32 *BufferSRC, u32 BufferSize )
 {
   DMA_InitTypeDef SDDMA_InitStruct;
