@@ -21,6 +21,8 @@
 // ST library
 #include <stm32f4xx.h>
 
+		
+/* Data-type definition ------------------------------------------------------*/
 typedef enum {
 /** 
   * @brief  SDIO specific error defines  
