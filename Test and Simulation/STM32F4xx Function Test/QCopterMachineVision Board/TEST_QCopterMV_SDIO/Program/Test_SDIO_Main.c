@@ -17,6 +17,7 @@
 // STM32F4xx Config library
 #include "stm32f4_delay.h"
 #include "stm32f4_gpio.h"
+#include "stm32f4_sdio.h"
 
 // QCopter MachineVision Module
 #include "QCopterMV_LED.h"
@@ -33,8 +34,28 @@ int main(void)
 	LED_Config();
 	RS232_Config();
 	
+	// Show up system inf.
+	RS232_SendStr(USART2, (u8*) "QCopter MV SDIO Test Demon\n\r");
+	RS232_SendStr(USART2, (u8*) "--------------------------\n\r");
+	
+	while(SD_Init() != SD_OK) {
+			
+		RS232_SendStr(USART2, (u8*) "SD card initial failed...\n\r");
+		
+		while(1) {
+			
+			LED_R = ~LED_R;
+			delay_100ms(1);
+			while(SD_Init() == SD_OK); // wait util initial success
+		
+		}
+		
+	} // END while SD initial failed
+	
+	RS232_SendStr(USART2, (u8*) "SD card initial success...\n\r");
+	
 	while(1) {
-
+		
 	} // END while
 
 } // END main

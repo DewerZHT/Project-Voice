@@ -17,6 +17,7 @@
 .\Obj\test_sdio_main.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h
 .\Obj\test_sdio_main.o: ..\Program\stm32f4_delay.h
 .\Obj\test_sdio_main.o: ..\Program\stm32f4_gpio.h
+.\Obj\test_sdio_main.o: ..\Program\stm32f4_sdio.h
 .\Obj\test_sdio_main.o: ..\Program\QCopterMV_LED.h
 .\Obj\test_sdio_main.o: ..\Program\QCopterMV_RS232.h
 .\Obj\test_sdio_main.o: ..\Program\StringConvert.h
