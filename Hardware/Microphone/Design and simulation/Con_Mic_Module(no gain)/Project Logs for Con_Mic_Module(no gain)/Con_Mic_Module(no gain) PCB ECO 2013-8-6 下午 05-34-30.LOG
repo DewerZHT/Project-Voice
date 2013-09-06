@@ -1,0 +1,14 @@
+Added Component: Designator=Mic1(Con_Mic_9.6mm)
+Added Component: Designator=P1(Pad1X1_1.27)
+Added Component: Designator=P2(Pad1X1_1.27)
+Added Component: Designator=P3(Pad1X1_1.27)
+Added Pin To Net: NetName=NetMic1_1 Pin=Mic1-1
+Added Pin To Net: NetName=NetC1_1 Pin=Mic1-2
+Added Pin To Net: NetName=VCC Pin=P1-1
+Added Pin To Net: NetName=SIGNAL OUT Pin=P2-1
+Added Pin To Net: NetName=GND Pin=P3-1
+Added Member To Class: ClassName=Con_Mic_Module(no gain) Member=Component Mic1 Mic
+Added Member To Class: ClassName=Con_Mic_Module(no gain) Member=Component P1 Pad1X1_1.27
+Added Member To Class: ClassName=Con_Mic_Module(no gain) Member=Component P2 Pad1X1_1.27
+Added Member To Class: ClassName=Con_Mic_Module(no gain) Member=Component P3 Pad1X1_1.27
+Added Room: Name=Con_Mic_Module(no gain)

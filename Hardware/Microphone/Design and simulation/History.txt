@@ -1,0 +1,19 @@
+condenser microphone circuit
+
+1.Condenser Microphone(電容式)
+	根據Con_Mic(without gain).JPG的Schematic
+  R1 與 R2是Mic的Bias電阻，若R1 = R2則Mic會趨於電平衡
+	從Mic的接地端輸出訊號會以地準位為準，R1與R2變小可以改善Mic的RC充電暫態
+  
+	C1與R3是做High Pass的濾波Cut-off freq在33Hz左右(見RC Filter High Pass.JPG) 
+	from http://sim.okawa-denshi.jp/en/CRhikeisan.htm
+	
+	(2013.08.02)
+	
+2.Dynamic Microphone(動圈式)
+	由於電容式麥克風一直無法增強本身的訊號強度
+	(被動式元件)，暫時改用動圈式做測試
+	
+3.Operating Amp.
+	放大來自麥克風的訊號
+	
