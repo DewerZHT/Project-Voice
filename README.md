@@ -5,6 +5,13 @@ The voice project of Embedded System use STM32
 
 * wiki website : https://github.com/DewerZHT/Project-Voice.wiki.git
 
+Hardware
+========
+
+* STM32F407VG Core Board
+* STM32F4 Discovery
+* QCopter MachineVision
+
 Reference projects
 ==================
 * Hom
