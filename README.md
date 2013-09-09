@@ -12,6 +12,16 @@ Hardware
 * STM32F4 Discovery
 * QCopter MachineVision
 
+Software Tools
+==============
+* Program IDE
+  * Code::Blocks
+  * Keil C
+* Hardware design
+  * Altium Designer
+  * LTSPICE
+* Documents
+
 Reference projects
 ==================
 * Hom
@@ -20,10 +30,17 @@ Reference projects
 Reference websites
 ==================
 * Audio & Voice
-  * PassLab  - https://passlabs.com
+  * Stanford          - ccrma.stanford.edu/courses/422/projects/WaveFormat/
+  * UCSC              - artsites.ucsc.edu/ems/Music/tech_background/tech_background.html\
+  * Fileformat.info   - www.fileformat.info/format/riff/corion.htm
+  * Developers.google - developers.google.com/speed/webp/docs/riff_container
 
 * Embedded OS
   * FreeRTOS - www.freertos.org 
+  * uClinux  - www.uclinux.org
+
+* Hardware design
+  * PassLab - passlabs.com
 
 Reference documents
 ===================
