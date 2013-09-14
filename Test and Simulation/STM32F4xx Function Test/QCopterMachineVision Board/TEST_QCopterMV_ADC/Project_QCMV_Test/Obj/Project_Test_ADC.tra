@@ -1,0 +1,32 @@
+*** Creating Trace Output File '.\Obj\Project_Test_ADC.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\obj\startup_stm32f4xx.o"'
+### List of Objects: adding '".\obj\system_stm32f4xx.o"'
+### List of Objects: adding '".\obj\test_adc_main.o"'
+### List of Objects: adding '".\obj\stm32f4xx_rcc.o"'
+### List of Objects: adding '".\obj\stm32f4xx_gpio.o"'
+### List of Objects: adding '".\obj\stm32f4xx_adc.o"'
+### List of Objects: adding '".\obj\stm32f4xx_usart.o"'
+### List of Objects: adding '".\obj\stm32f4xx_dma.o"'
+### List of Objects: adding '".\obj\stm32f4_delay.o"'
+### List of Objects: adding '".\obj\qcoptermv_led.o"'
+### List of Objects: adding '".\obj\qcoptermv_rs232.o"'
+### List of Objects: adding '".\obj\stringconvert.o"'
+### List of Objects: adding '".\obj\qcoptermv_adc.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M4.fp ".\obj\startup_stm32f4xx.o" ".\obj\system_stm32f4xx.o" ".\obj\test_adc_main.o" ".\obj\stm32f4xx_rcc.o" ".\obj\stm32f4xx_gpio.o" ".\obj\stm32f4xx_adc.o" ".\obj\stm32f4xx_usart.o" ".\obj\stm32f4xx_dma.o" ".\obj\stm32f4_delay.o" ".\obj\qcoptermv_led.o" ".\obj\qcoptermv_rs232.o" ".\obj\stringconvert.o" ".\obj\qcoptermv_adc.o" 
+--strict --scatter ".\Obj\Project_Test_ADC.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\List\Project_Test_ADC.map" -o .\Obj\Project_Test_ADC.axf### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\Obj\Project_Test_ADC.axf'
+### ADS-LD Command File: '.\Obj\Project_Test_ADC.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\Obj\Project_Test_ADC.lnp', Handle=0x000008F8
+### Writing '.lnp' file
+### ADS-LD Command file '.\Obj\Project_Test_ADC.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

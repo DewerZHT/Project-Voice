@@ -51,7 +51,7 @@ int main(void)
 		if(CNT == 32767) CNT = 0;
 		
 		RS232_SendStr(USART2, (u8*) " Counter = ");
-		RS232_SendStr(USART2, (u8*) int2str(CNT, Octal));
+		RS232_SendStr(USART2, (u8*) int2str(CNT, Hexadecimal));
 		RS232_SendStr(USART2, (u8*) "\n\r");
 		
 		delay_10ms(2);
