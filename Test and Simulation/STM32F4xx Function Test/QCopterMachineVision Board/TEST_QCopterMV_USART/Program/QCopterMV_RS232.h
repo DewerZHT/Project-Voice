@@ -21,8 +21,13 @@
 // ST library
 #include <stm32f4xx.h>
 
+#define STR_MAX_SIZE 200
+
+extern unsigned char StrBuf[STR_MAX_SIZE];
+
 void RS232_Config( void );
 void RS232_SendStr( USART_TypeDef* USARTx, unsigned char *pWord );
+u8* RS232_ReceStr( USART_TypeDef* USARTx );
 void RS232_VisualScope( USART_TypeDef*, u8*, u16 );
 	 
 #ifdef __cplusplus

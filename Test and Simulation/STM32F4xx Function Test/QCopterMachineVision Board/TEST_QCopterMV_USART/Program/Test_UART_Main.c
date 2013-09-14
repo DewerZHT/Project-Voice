@@ -32,6 +32,7 @@
 int main(void)
 {
 	unsigned int CNT = 0;
+	u8* ReceBuf = {0};
 	
 	// STM32F4 System Initial
 	SystemInit();
@@ -45,17 +46,15 @@ int main(void)
 	LED_G = ~LED_G;
 
 	while(1) {
-		
 		LED_G = ~LED_G;
 		
-		if(CNT == 32767) CNT = 0;
+		do {
+			
+			ReceBuf = RS232_ReceStr(USART2);
+			
+		} while(IS_USART_CLEAR_FLAG(USART_FLAG_RXNE)); // END while receive data from RS232
 		
-		RS232_SendStr(USART2, (u8*) " Counter = ");
-		RS232_SendStr(USART2, (u8*) int2str(CNT, Hexadecimal));
-		RS232_SendStr(USART2, (u8*) "\n\r");
-		
-		delay_10ms(2);
-		CNT++;
+		RS232_SendStr(USART2, ReceBuf);
 		
 	} // END while
 

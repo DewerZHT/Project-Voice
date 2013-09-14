@@ -17,6 +17,9 @@
 // QCopter MachineVision Module
 #include "QCopterMV_RS232.h"
 
+/* Global Variable -----------------------------------------------------------*/
+unsigned char StrBuf[STR_MAX_SIZE];
+
 /******************************************************************************
  * @Function RS232_Config
  * @Brief    Config RS232 at STM32F4 USART3:
@@ -78,6 +81,25 @@ void RS232_SendStr( USART_TypeDef* USARTx, unsigned char *pWord )
 	} // END while string end
 	
 } // END RS232_Send
+
+/******************************************************************************
+ * @Function RS232_ReceStr
+ * @Brief    Receive string util it go to end.
+ *
+ **/
+u8* RS232_ReceStr( USART_TypeDef* USARTx )
+{
+	u8 strCNT = 0;
+	
+	for(strCNT = 0; strCNT < (STR_MAX_SIZE - 1); strCNT++) {
+		
+		StrBuf[strCNT] = USART_ReceiveData(USARTx);
+
+	} // END for
+	
+	return StrBuf;
+
+} // END RS232_ReceStr
 
 /******************************************************************************
  * @Function RS232_VisualScope_CRC16

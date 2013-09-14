@@ -794,22 +794,22 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-       328         16          0          0        256       1941   qcoptermv_adc.o
-       116         20          0          0          0        645   qcoptermv_led.o
-       316         14          0          0          0       2023   qcoptermv_rs232.o
-        64         26        392          0       1536        968   startup_stm32f4xx.o
-       136         10          0          0          0       1504   stm32f4_delay.o
-      1136         28          0          0          0      24778   stm32f4xx_adc.o
-       932         32          0          0          0       6601   stm32f4xx_dma.o
-       604         36          0          0          0       4365   stm32f4xx_gpio.o
-      1416         48          0         16          0      11359   stm32f4xx_rcc.o
-      1050         26          0          0          0       8080   stm32f4xx_usart.o
-       264          6          0          0        200       2474   stringconvert.o
-       524         44          0         20          0     251955   system_stm32f4xx.o
-       192         74          0          0          0        663   test_adc_main.o
+       328         16          0          0        256       1617   qcoptermv_adc.o
+       116         20          0          0          0        537   qcoptermv_led.o
+       316         14          0          0          0       1807   qcoptermv_rs232.o
+        64         26        392          0       1536        860   startup_stm32f4xx.o
+       136         10          0          0          0       1396   stm32f4_delay.o
+      1136         28          0          0          0      24450   stm32f4xx_adc.o
+       932         32          0          0          0       6385   stm32f4xx_dma.o
+       604         36          0          0          0       4149   stm32f4xx_gpio.o
+      1416         48          0         16          0      11031   stm32f4xx_rcc.o
+      1050         26          0          0          0       7860   stm32f4xx_usart.o
+       264          6          0          0        200       2150   stringconvert.o
+       524         44          0         20          0     251083   system_stm32f4xx.o
+       192         74          0          0          0        555   test_adc_main.o
 
     ----------------------------------------------------------------------
-      7080        380        424         36       1992     317356   Object Totals
+      7080        380        424         36       1992     313880   Object Totals
          0          0         32          0          0          0   (incl. Generated)
          2          0          0          0          0          0   (incl. Padding)
 
@@ -861,8 +861,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      7444        396        424         36       2092     315116   Grand Totals
-      7444        396        424         36       2092     315116   ELF Image Totals
+      7444        396        424         36       2092     311640   Grand Totals
+      7444        396        424         36       2092     311640   ELF Image Totals
       7444        396        424         36          0          0   ROM Totals
 
 ==============================================================================
