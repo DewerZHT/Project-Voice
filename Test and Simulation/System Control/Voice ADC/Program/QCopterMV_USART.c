@@ -1,10 +1,10 @@
 /**
- * @File    QCopterMV_RS232.c
- * @Date    2013.08.30 Firday
+ * @File    QCopterMV_USART.c
+ * @Date    2013.09.19 Thursday
  * @Author  Wu, Chen-Hao
  *				  CYCU ICE, Lab801; AutoControl Club
- * @Version V1
- * @Brief   QCopter - MachineVision Board RS232 config and access
+ * @Version V2
+ * @Brief   QCopter - MachineVision Board USART config and access
  *
  * @Create  2013.08.30 Firday
  *
@@ -15,19 +15,19 @@
 #include "stm32f4_gpio.h"
 
 // QCopter MachineVision Module
-#include "QCopterMV_RS232.h"
+#include "QCopterMV_USART.h"
 
 /******************************************************************************
- * @Function RS232_Config
- * @Brief    Config RS232 at STM32F4 USART3:
- *					 	BaudRate							9600
- *           	WordLength						8-bits
- *					 	StopBits							1
- *					 	HardwareFlowControl		None
- *					 	Mode									Tx & Rx
+ * @Function USART_Config
+ * @Brief    Config USART at STM32F4 USART3:
+ *					 BaudRate							9600
+ *           WordLength						8-bits
+ *					 StopBits							1
+ *					 HardwareFlowControl		None
+ *					 Mode									Tx & Rx
  *
  **/
-void RS232_Config( void )
+void USART_Config( void )
 {
 	GPIO_InitTypeDef GPIO_InitStruct;
 	USART_InitTypeDef USART_InitStruct;
@@ -56,16 +56,16 @@ void RS232_Config( void )
 	USART_Cmd(USART2, ENABLE);
 	
 	// initial at line one column 1
-	RS232_SendStr(USART2, (u8*) "\r");
+	USART_SendStr(USART2, (u8*) "\r");
 	
-}
+} // END USART_Config
 
 /******************************************************************************
- * @Function RS232_SendStr
+ * @Function USART_SendStr
  * @Brief    Send out string util it go to end.
  *
  **/
-void RS232_SendStr( USART_TypeDef* USARTx, unsigned char *pWord )
+void USART_SendStr( USART_TypeDef* USARTx, unsigned char *pWord )
 {
 	while(*pWord != '\0') {
 		
@@ -77,15 +77,15 @@ void RS232_SendStr( USART_TypeDef* USARTx, unsigned char *pWord )
 	
 	} // END while string end
 	
-} // END RS232_Send
+} // END USART_SendStr
 
 /******************************************************************************
- * @Function RS232_VisualScope_CRC16
+ * @Function USART_VisualScope_CRC16
  * @Brief    Calculated 16-bits CRC code for PC's application VisualScope,
  *           then send it out.
  *
  **/
-static u16 RS232_VisualScope_CRC16( u8 *Array, u16 Len )
+static u16 USART_VisualScope_CRC16( u8 *Array, u16 Len )
 {
 	u16 USART_IX, USART_IY, USART_CRC;
 
@@ -108,19 +108,19 @@ static u16 RS232_VisualScope_CRC16( u8 *Array, u16 Len )
 	
 	return(USART_CRC);
 	
-} // END RS232_VisualScope_CRC16
+} // END USART_VisualScope_CRC16
 
 /******************************************************************************
- * @Function RS232_VisualScope
+ * @Function USART_VisualScope
  * @Brief    Send data to PC's application VisualScope,
  *
  **/
-void RS232_VisualScope( USART_TypeDef* USARTx, u8 *pWord, u16 Len )
+void USART_VisualScope( USART_TypeDef* USARTx, u8 *pWord, u16 Len )
 {
 	u8 i = 0;
 	u16 Temp = 0;
 
-	Temp = RS232_VisualScope_CRC16(pWord, Len);
+	Temp = USART_VisualScope_CRC16(pWord, Len);
 	pWord[8] = Temp&0x00ff;
 	pWord[9] = (Temp&0xff00)>>8;
 
@@ -132,6 +132,6 @@ void RS232_VisualScope( USART_TypeDef* USARTx, u8 *pWord, u16 Len )
 		
 	} // END for
 	
-} // END RS232_VisualScope
+} // END USART_VisualScope
 
 
