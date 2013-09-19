@@ -1,9 +1,9 @@
 /**
  * @File    QCopterMV_ADC.c
- * @Date    2013.09.12 Thursday
+ * @Date    2013.09.19 Thursday
  * @Author  Wu, Chen-Hao
  *				  CYCU ICE, Lab801; AutoControl Club
- * @Version V1
+ * @Version V2
  * @Brief   QCopter - MachineVision Board ADC Periphral Config
  *
  * @Create  2013.09.12 Thursday
@@ -34,7 +34,7 @@ void ADC_Config( void )
 	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_DMA2, ENABLE);
   RCC_APB2PeriphClockCmd(RCC_APB2Periph_ADC1, ENABLE);
 
-  /* ADC_I PA0 */ 
+  /* Voice ADC read pin PA0 */ 
   GPIO_InitStruct.GPIO_Pin = GPIO_Pin_0;
   GPIO_InitStruct.GPIO_Mode = GPIO_Mode_AN;
   GPIO_InitStruct.GPIO_PuPd = GPIO_PuPd_NOPULL;
@@ -46,12 +46,12 @@ void ADC_Config( void )
   DMA_InitStruct.DMA_Memory0BaseAddr = (u32) &ADC_DMA_Buf;                    // Memory address
   DMA_InitStruct.DMA_DIR = DMA_DIR_PeripheralToMemory;                        // Peripheral to Memory
   DMA_InitStruct.DMA_BufferSize = ADC_Sample * ADC_Channel;                   // Memory Buffer Size
-  DMA_InitStruct.DMA_PeripheralInc = DMA_PeripheralInc_Disable;               // Peripheral address 遞增 Disable
-  DMA_InitStruct.DMA_MemoryInc = DMA_MemoryInc_Enable;                        // Memory address 遞增 Enable
+  DMA_InitStruct.DMA_PeripheralInc = DMA_PeripheralInc_Disable;               // Peripheral address increase Disable
+  DMA_InitStruct.DMA_MemoryInc = DMA_MemoryInc_Enable;                        // Memory address increase Enable
   DMA_InitStruct.DMA_PeripheralDataSize = DMA_PeripheralDataSize_HalfWord;    // Peripheral Data Size 16bit
   DMA_InitStruct.DMA_MemoryDataSize = DMA_MemoryDataSize_HalfWord;            // Memory Data Size 16bit
-  DMA_InitStruct.DMA_Mode = DMA_Mode_Circular;                                // 循環模式 Enable
-  DMA_InitStruct.DMA_Priority = DMA_Priority_High;                            // ADC DMA通道 高優先級
+  DMA_InitStruct.DMA_Mode = DMA_Mode_Circular;                                // Circular DMA Enable
+  DMA_InitStruct.DMA_Priority = DMA_Priority_High;                            // ADC DMA at high priority
   DMA_InitStruct.DMA_FIFOMode = DMA_FIFOMode_Disable;                         // DMA FIFO Disable
   DMA_InitStruct.DMA_FIFOThreshold = DMA_FIFOThreshold_HalfFull;
   DMA_InitStruct.DMA_MemoryBurst = DMA_MemoryBurst_Single;

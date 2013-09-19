@@ -1,0 +1,5 @@
+--cpu Cortex-M4.fp ".\obj\startup_stm32f4xx.o" ".\obj\system_stm32f4xx.o" ".\obj\voice_adc_main.o" ".\obj\stm32f4xx_adc.o" ".\obj\stm32f4xx_dma.o" ".\obj\stm32f4xx_gpio.o" ".\obj\stm32f4xx_rcc.o" ".\obj\stm32f4xx_sdio.o" ".\obj\stm32f4xx_usart.o" ".\obj\qcoptermv_adc.o" ".\obj\qcoptermv_led.o" ".\obj\qcoptermv_usart.o" ".\obj\stm32f4_delay.o" ".\obj\stringconvert.o" 
+--strict --scatter ".\Obj\PROJ_VOICE_ADC.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\List\PROJ_VOICE_ADC.map" -o .\Obj\PROJ_VOICE_ADC.axf
