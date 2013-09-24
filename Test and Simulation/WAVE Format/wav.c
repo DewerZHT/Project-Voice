@@ -1,38 +1,29 @@
-/*
-*		Wav decoding functions for wav file format reading.
-*		|Author|	Wayne
-*		|Date  |	2013.4.7
-*		|Note  |	Wav decoding functions.
-*	
-*/
-/*******************Revisions*******************/
-/*	|Date  |	2013.4.7
-*   |Detail|	1.Obsoleted Wav_FormatValid() function.
-*							2.Added struct WAV_FILEFMT for writing file type parsing informations.
-*							3.Added tBoolean as a boolean type object definition.
-*
-*		|Date  |	2013.4.9
-*		|Detail|	1.Added WAV_FMT_CHECK_RESULT enumerator as a format check results returning value.
-*							2.Added parseFileFmt() to parse the file header.
-*							3.Added checkFileFmt_Type1() to check file format to meet Type1's content.
-*							4.Added file header length and some offset parameter macros.
-*							5.Obsoleted old variables: FileFormatCheck, FormatValidity and SampleDataSize.
-*							
-*							
-*/
-
+/**
+ * Wav decoding functions for wav file format access.
+ * Fork from Wayne (CYCU EE)
+ *
+ * File name wav.c
+ * Author		 Wu, Chen-Hao
+ * Date  		 2013.09.24
+ * Brief  	 Wav coding and decoding functions.
+ *	
+ * Revision	
+ * Date		2013.4.7
+ *   1.Obsoleted Wav_FormatValid() function.
+ *	 2.Added struct WAV_FILEFMT for writing file type parsing informations.
+ *	 3.Added tBoolean as a boolean type object definition.
+ *
+ * Date		2013.4.9
+ *	 1.Added WAV_FMT_CHECK_RESULT enumerator as a format check results returning value.
+ *	 2.Added parseFileFmt() to parse the file header.
+ *	 3.Added checkFileFmt_Type1() to check file format to meet Type1's content.
+ *	 4.Added file header length and some offset parameter macros.
+ *	 5.Obsoleted old variables: FileFormatCheck, FormatValidity and SampleDataSize.
+ *							
+ *							
+ **/
+/* Include ********************************************************************/
 #include "wav.h"
-
-// //*****************************************************************************
-// //
-// // A flag to indicate the file checking status
-// //
-// //*****************************************************************************
-// tBoolean FileFormatCheck=false;
-
-// tBoolean FormatValidity=false;
-
-// unsigned long SampleDataSize=0;
 
 //*****************************************************************************
 //
@@ -69,7 +60,7 @@ unsigned long Wav_4ByteLittleEndianConvert(unsigned char byte[]){		//compare wit
 //*****************************************************************************
 tBoolean IsFileRIFF(unsigned char byte[]){
 		
-		if( byte[0]==Ascii_R && byte[1]==Ascii_I && byte[2]==Ascii_F && byte[3]==Ascii_F ){
+		if( byte[0]==ASCII_R && byte[1]==ASCII_I && byte[2]==ASCII_F && byte[3]==ASCII_F ){
 				return true;
 		}
 		else{
@@ -162,90 +153,6 @@ unsigned int getBitPerSample(unsigned char byte[]){
 		
 		return value;
 }
-
-// //*****************************************************************************
-// //
-// // Check validity of the file to meet the format:RIFF WAVE PCM Stereo 44100Hz 16bit
-// //
-// //*****************************************************************************
-// tBoolean Wav_FormatValid(unsigned char byte[]){
-// 		
-// 		if(IsFileRIFF(byte)==true){
-// 				
-// 				UARTprintf("\nFile is RIFF? : %d",true);
-// 			
-// 				if(IsFileWave(&byte[8])==true){
-// 						
-// 						UARTprintf("\nFile is WAVE? : %d",true);
-// 						
-// 						if(IsPCMFormat(&byte[20])==true){
-// 								
-// 								UARTprintf("\nPCM? : %d",true);
-// 								
-// 								if(getChNumber(&byte[22])==Stereo_Channel){
-// 										
-// 										UARTprintf("\nChannel: Stereo");
-// 										
-// 										if(getSampleRate(&byte[24])==SampleRate_44100){
-// 												
-// 												UARTprintf("\nSample Rate: %u",SampleRate_44100);
-// 												
-// 												if(getBitPerSample(&byte[34])==BitPerSample_16){
-// 														
-// 														UARTprintf("\nByte Rate: %u",getByteRate(&byte[28]));
-// 														
-// 														UARTprintf("\nBit Per Sample: %u",BitPerSample_16);
-// 														
-// 														return true;
-// 												}
-// 												else{
-// 														
-// 														UARTprintf("\nByte Rate: %u",getByteRate(&byte[28]));
-// 														
-// 														UARTprintf("\nBit Per Sample: %u",getBitPerSample(&byte[34]));
-// 														
-// 														return false;
-// 												}
-// 										}
-// 										else{
-// 												
-// 												UARTprintf("\nSample Rate: %u",getSampleRate(&byte[24]));
-// 												
-// 												UARTprintf("\nByte Rate: %u",getByteRate(&byte[28]));
-// 											
-// 												UARTprintf("\nBit Per Sample: %u",getBitPerSample(&byte[34]));
-// 											
-// 												return false;
-// 										}
-// 								}
-// 								else{
-// 										
-// 										UARTprintf("\nChannel: %u",getChNumber(&byte[22]));
-// 										
-// 										return false;
-// 								}
-// 						}
-// 						else{
-// 								
-// 								UARTprintf("\nPCM? : %d",false);
-// 								
-// 								return false;
-// 						}
-// 				}
-// 				else{
-// 						
-// 						UARTprintf("\nFile is WAVE? : %d",false);
-// 						
-// 						return false;
-// 				}
-// 		}
-// 		else{
-// 				
-// 				UARTprintf("\nFile is RIFF? : %d",false);
-// 				
-// 				return false;
-// 		}
-// }
 
 //*****************************************************************************
 //
