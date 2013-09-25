@@ -12,9 +12,10 @@ Hardware
 * STM32F4 Discovery
 * STM32F4 EVB
 * QCopter MachineVision
+* Multimedia & Ethernet Board (Still designing)
 
-Software Tools
-==============
+Development Tools
+=================
 * Program IDE
   * Code::Blocks
   * Keil C
@@ -22,6 +23,10 @@ Software Tools
   * Altium Designer
   * LTSPICE
 * Documents
+  * Notepad++
+  * Microsoft Office 2010
+  * Adobe Acrbat Reader ProX
+* Platfrom
 
 Reference projects
 ==================
@@ -46,9 +51,15 @@ Reference websites
 Reference documents
 ===================
 * From ST :
+  * AN 2834 - ADC accuracy in STM32F series
+  * AN 3070 - Managing the Driver Enable signal for STM32's USART
+  * AN 3116 - STM32's ADC modes and their application
   * AN 3126 - Audio and waveform generation using the DAC
               in STM32 microcontroller families
+  * AN 3371 - Using hardware RTC in STM32F0, F2, F3, F4 and L1 series
   * AN 3997 - Audio playback and recording using the STM32F4DISCOVERY
+  * AN 4013 - STM32F1, F2, F4 and L1 timer overview
+  * AN 4073 - Improve ADC accuracy using STM32F2 and F4 series
   * PM 0214 - STM32F3xxx and STM32F4xxx Cortex-M4 programming manual
   * RM 0008 - Reference manual for STMF1xx advanced ARM-based 32-bit MCUs
   * RM 0090 - Reference manual for STMF4xx advanced ARM-based 32-bit MCUs
