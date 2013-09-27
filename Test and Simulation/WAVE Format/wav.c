@@ -25,16 +25,23 @@
 /* Include ********************************************************************/
 #include "wav.h"
 
+#include <stdlib.h>
+
 //*****************************************************************************
 //
 // Convert 2-Byte Little-Endian value into 16bit value
 //
 //*****************************************************************************
-unsigned int Wav_2ByteLittleEndianConvert(unsigned char byte[]){		
+unsigned char* Wav_2ByteLittleEndianConvert(unsigned char byte[], int nBytes) {		
 		
-		unsigned int value=0;
+		unsigned char* value;
 		
-		value=byte[0]+byte[1]*256;		
+		value = malloc(sizeof(char) * nBytes) 
+		
+		for( ; ; ) {
+			value[] = byte[0]+byte[1]*256;		
+		
+		} // END for ()
 		
 		return value;
 }

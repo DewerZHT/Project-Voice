@@ -1,4 +1,2 @@
-History.txt
-
-Version 1 
-  ADC test use ST library to access.
+2013.08.30 Firday Version 1
+  Test complete

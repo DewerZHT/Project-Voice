@@ -22,16 +22,16 @@
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f4xx.h"
 	 
-/*=====================================================================================================*/
-/*=====================================================================================================*/
-extern void delay_1us  ( unsigned int delay_Times );
-extern void delay_10us ( unsigned int delay_Times );
-extern void delay_100us( unsigned int delay_Times );
-extern void delay_1ms  ( unsigned int delay_Times );
-extern void delay_10ms ( unsigned int delay_Times );
-extern void delay_100ms( unsigned int delay_Times );
-/*=====================================================================================================*/
-/*=====================================================================================================*/
+/******************************************************************************
+ * @Brief STM32F4 168MHz Time delay Function Reference
+ *
+ **/
+void delay_1us  ( unsigned int delay_Times );
+void delay_10us ( unsigned int delay_Times );
+void delay_100us( unsigned int delay_Times );
+void delay_1ms  ( unsigned int delay_Times );
+void delay_10ms ( unsigned int delay_Times );
+void delay_100ms( unsigned int delay_Times );
 	 
 #ifdef __cplusplus
 	}
