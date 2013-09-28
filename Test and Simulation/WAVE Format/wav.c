@@ -33,17 +33,19 @@
 //
 //*****************************************************************************
 unsigned char* Wav_2ByteLittleEndianConvert(unsigned char byte[], int nBytes) {		
-		
-		unsigned char* value;
-		
-		value = malloc(sizeof(char) * nBytes) 
-		
-		for( ; ; ) {
-			value[] = byte[0]+byte[1]*256;		
-		
-		} // END for ()
-		
-		return value;
+	
+	unsigned char  byteCNT = 0;
+	unsigned char* value;
+	
+	value = malloc(sizeof(char) * nBytes) 
+	
+	for( ; byteCNT < nBytes; byteCNT++) {
+	
+		value[byteCNT] = byte[0]+byte[1]*256;		
+	
+	} // END for ()
+	
+	return value;
 }
 
 //*****************************************************************************
