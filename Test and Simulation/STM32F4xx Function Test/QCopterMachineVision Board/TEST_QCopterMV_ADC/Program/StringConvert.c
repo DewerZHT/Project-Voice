@@ -84,7 +84,7 @@ char* int2str(int value, int numBase)
 			for(numCNT = 0; isNumEnd == false ; numCNT++) {
 				
 				numBuf[numCNT] = value / numOffset;
-				numOffset = numOffset * numBase;
+				numOffset = numOffset * 10;
 				
 				if(numBuf[numCNT] == 0) {
 					
@@ -97,7 +97,7 @@ char* int2str(int value, int numBase)
 			
 			for(numOffset = 0; numOffset < numCNT; numOffset++) {
 				
-				convertStr[numOffset+1] = numBuf[numCNT-numOffset-1] % (numBase);
+				convertStr[numOffset+1] = numBuf[numCNT-numOffset-1] % 10;
 				
 				if(convertStr[numOffset+1] > 9) {
 					

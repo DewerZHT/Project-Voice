@@ -51,7 +51,7 @@ int main( void )
 		LED_G = ~LED_G;
 		ADC_Average(ADCaverageVal);
 		RS232_SendStr(USART2, (u8*) "ADC value = ");
-		RS232_SendStr(USART2, (u8*) int2str(ADCaverageVal[0], Binary));
+		RS232_SendStr(USART2, (u8*) int2str(ADCaverageVal[0], Integer));
 		RS232_SendStr(USART2, (u8*) "\n\r");
 		delay_100ms(1);
 		
