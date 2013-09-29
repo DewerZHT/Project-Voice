@@ -50,7 +50,7 @@ int main( void )
 		
 		LED_G = ~LED_G;
 		ADC_Average(ADCaverageVal);
-		ADCaverageVal[0] = (int) (ADCaverageVal[0] / 2047) * 65535;
+// 		ADCaverageVal[0] = (int) (ADCaverageVal[0] / 2047) * 65535;
 		RS232_SendStr(USART2, (u8*) "ADC value = ");
 		RS232_SendStr(USART2, (u8*) int2str(ADCaverageVal[0], Integer));
 		RS232_SendStr(USART2, (u8*) "\n\r");

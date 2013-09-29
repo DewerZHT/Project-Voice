@@ -49,7 +49,19 @@ int main( void )
 		
 		LED_G = ~LED_G;
 		ADC_Average(ADCaverageVal);
-		ADCaverageVal[0] = (int) (ADCaverageVal[0] / 2047) * 65535;
+// 		ADCaverageVal[0] = (int) (ADCaverageVal[0] / 2047) * 65535;
+		if(ADCaverageVal[0] < 32768) {
+		
+			ADCaverageVal[0] = ADCaverageVal[0] % 32768;
+			ADCaverageVal[0] = (32678 - ADCaverageVal[0]) * (-1);
+			
+		} // END if ADC channel is below 1.65 V
+		else {
+
+			ADCaverageVal[0] = ADCaverageVal[0] / 32768;
+
+		} // END if ADC channel is above 1.65 V
+		
 		USART_SendStr(USART2, (u8*) "ADC value = ");
 		USART_SendStr(USART2, (u8*) int2str(ADCaverageVal[0], Integer));
 		USART_SendStr(USART2, (u8*) "\n\r");

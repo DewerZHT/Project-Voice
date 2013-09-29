@@ -1,13 +1,13 @@
 Project-Voice
 =============
-
 The voice project of Embedded System use STM32
 
-* wiki website : http://github.com/DewerZHT/Project-Voice.wiki.git
+Author
+======
+
 
 Hardware
 ========
-
 * STM32F407VG Core Board
 * STM32F4 Discovery
 * STM32F4 EVB
@@ -30,7 +30,7 @@ Development Tools
 
 Reference projects
 ==================
-* Hom
+* Hom19910422
   * QCopterMachineVision -  http://github.com/Hom19910422
 
 Reference websites
@@ -66,6 +66,7 @@ Reference documents
   * STM32F4-Technical-Training
   * 2013 ARM Design Contest - STM32F4 Training
   * STM32F4-EVB User Manual
+	* STM32F4 DISCOVERY Documentations
 
 * From PassLab :
   * Ground Loops
