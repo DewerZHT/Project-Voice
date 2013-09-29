@@ -1,4 +1,4 @@
-.\Obj\stm32f4_delay.o: ..\Program\stm32f4_delay.c
+.\Obj\stm32f4_delay.o: ..\Program\stm32f4_DELAY.c
 .\Obj\stm32f4_delay.o: ..\Program\stm32f4_delay.h
 .\Obj\stm32f4_delay.o: ..\Libraries\CMSIS\stm32f4xx.h
 .\Obj\stm32f4_delay.o: ..\Libraries\CMSIS\core_cm4.h

@@ -28,9 +28,6 @@
 
 #define ADC_Channel		1
 #define ADC_Sample		128
-
-/* Global Variables ----------------------------------------------------------*/
-extern u16 ADC_DMA_Buf[ADC_Sample][ADC_Channel];
 		
 /* Function declaration ------------------------------------------------------*/
 void ADC_Config( void );

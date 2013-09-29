@@ -78,6 +78,43 @@ char* int2str(int value, int numBase)
 			break; // END Hexadecimal convert
 		
 		case Integer :
+			if(value >= 0)     convertStr[0] = '+'; // if(value is positive)
+			else if(value < 0) convertStr[0] = '-'; // if(value is negative)
+		
+			for(numCNT = 0; isNumEnd == false ; numCNT++) {
+				
+				numBuf[numCNT] = value / numOffset;
+				numOffset = numOffset * 10;
+				
+				if(numBuf[numCNT] == 0) {
+					
+					isNumEnd = true;
+					numCNT--;
+					
+				} // END if there is no data to be convert
+				
+			} // END for all data seperate by hex
+			
+			for(numOffset = 0; numOffset < numCNT; numOffset++) {
+				
+				convertStr[numOffset+1] = numBuf[numCNT-numOffset-1] % 10;
+				
+				if(convertStr[numOffset+1] > 9) {
+					
+					convertStr[numOffset+1] += (65 - 10); // 65 is 'A' ascii code
+					
+				} // END if convert data > 9
+				
+				else {
+					
+					convertStr[numOffset+1] += 48; // 48 is '0' ascii code
+					
+				} // END else convert data <= 9
+				
+			} // END for all data convert to char
+
+			convertStr[numOffset+2] = '\0';
+		
 			break;
 		
 		default :

@@ -12,10 +12,10 @@
 
 /* Includes ------------------------------------------------------------------*/
 // STM32F4xx Config library
-#include "stm32f4_gpio.h"
+#include "stm32f4_GPIO.h"
 
 // QCopter MachineVision Module
-#include "QCopterMV_LED.h"
+#include "stm32f4_LED.h"
 
 /******************************************************************************
  * @Function LED_Config

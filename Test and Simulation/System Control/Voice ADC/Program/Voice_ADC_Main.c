@@ -17,19 +17,22 @@
 #include <stm32f4xx.h>
 
 // STM32F4xx Config library
-#include "stm32f4_delay.h"
-#include "stm32f4_gpio.h"
+#include "stm32f4_DELAY.h"
+#include "stm32f4_GPIO.h"
 
 // QCopter MachineVision Module
-#include "QCopterMV_LED.h"
-#include "QCopterMV_USART.h"
-#include "QCopterMV_ADC.h"
+#include "stm32f4_LED.h"
+#include "stm32f4_USART.h"
+#include "stm32f4_ADC.h"
 
 // Data Convert
 #include "StringConvert.h"
 
 int main( void )
 {
+	// Variable
+	u16 ADCaverageVal[ADC_Channel] = {0};
+
 	// STM32F4 System Initial
 	SystemInit();
 	// QCopter MachineVision Config
@@ -37,14 +40,20 @@ int main( void )
 	USART_Config();
 	ADC_Config();
 
-	USART_SendStr(USART2, (u8*) "Hello!\n\r");
+	USART_SendStr(USART2, (u8*) "Hello! Here is \n\r");
 	USART_SendStr(USART2, (u8*) "STM32F4 QCMV Voice ADC Test.\n\r");
-	USART_SendStr(USART2, (u8*) "Please open VisualScope and config RS232 at COM1.\n\r");
+// 	USART_SendStr(USART2, (u8*) "Please open VisualScope and config RS232 at COM1.\n\r");
 	LED_G = ~LED_G;
 	
 	while( 1 ) {
 		
 		LED_G = ~LED_G;
+		ADC_Average(ADCaverageVal);
+		ADCaverageVal[0] = (int) (ADCaverageVal[0] / 2047) * 65535;
+		USART_SendStr(USART2, (u8*) "ADC value = ");
+		USART_SendStr(USART2, (u8*) int2str(ADCaverageVal[0], Integer));
+		USART_SendStr(USART2, (u8*) "\n\r");
+		delay_10ms(5);
 
 	} // END while (continue convert voice wave to digital.)
 

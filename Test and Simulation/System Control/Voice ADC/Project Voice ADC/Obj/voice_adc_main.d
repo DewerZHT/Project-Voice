@@ -13,9 +13,9 @@
 .\Obj\voice_adc_main.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h
 .\Obj\voice_adc_main.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h
 .\Obj\voice_adc_main.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h
-.\Obj\voice_adc_main.o: ..\Program\stm32f4_delay.h
-.\Obj\voice_adc_main.o: ..\Program\stm32f4_gpio.h
-.\Obj\voice_adc_main.o: ..\Program\QCopterMV_LED.h
-.\Obj\voice_adc_main.o: ..\Program\QCopterMV_USART.h
-.\Obj\voice_adc_main.o: ..\Program\QCopterMV_ADC.h
+.\Obj\voice_adc_main.o: ..\Program\stm32f4_DELAY.h
+.\Obj\voice_adc_main.o: ..\Program\stm32f4_GPIO.h
+.\Obj\voice_adc_main.o: ..\Program\stm32f4_LED.h
+.\Obj\voice_adc_main.o: ..\Program\stm32f4_USART.h
+.\Obj\voice_adc_main.o: ..\Program\stm32f4_ADC.h
 .\Obj\voice_adc_main.o: ..\Program\StringConvert.h
