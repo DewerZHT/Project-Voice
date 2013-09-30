@@ -31,6 +31,7 @@
 int main( void )
 {
 	// Variable
+	u8  ADCvalueScope[2];
 	u16 ADCaverageVal[ADC_Channel] = {0};
 
 	// STM32F4 System Initial
@@ -65,6 +66,9 @@ int main( void )
 		USART_SendStr(USART2, (u8*) "ADC value = ");
 		USART_SendStr(USART2, (u8*) int2str(ADCaverageVal[0], Integer));
 		USART_SendStr(USART2, (u8*) "\n\r");
+		ADCvalueScope[0] = ADCaverageVal[0];
+		ADCvalueScope[1] = ADCaverageVal[0];
+		USART_VisualScope(USART2, (u8*) ADCvalueScope, 2);
 		delay_10ms(5);
 
 	} // END while (continue convert voice wave to digital.)

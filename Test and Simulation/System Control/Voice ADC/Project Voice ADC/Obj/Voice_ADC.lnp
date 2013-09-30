@@ -1,4 +1,4 @@
---cpu Cortex-M4.fp ".\obj\startup_stm32f4xx.o" ".\obj\system_stm32f4xx.o" ".\obj\stm32f4xx_rcc.o" ".\obj\stm32f4xx_adc.o" ".\obj\stm32f4xx_dma.o" ".\obj\stm32f4xx_gpio.o" ".\obj\stm32f4xx_usart.o" ".\obj\stm32f4xx_tim.o" ".\obj\voice_adc_main.o" ".\obj\stm32f4_adc.o" ".\obj\stm32f4_delay.o" ".\obj\stm32f4_gpio.o" ".\obj\stm32f4_led.o" ".\obj\stm32f4_usart.o" ".\obj\stringconvert.o" 
+--cpu Cortex-M4.fp ".\obj\startup_stm32f4xx.o" ".\obj\system_stm32f4xx.o" ".\obj\stm32f4xx_rcc.o" ".\obj\stm32f4xx_dma.o" ".\obj\stm32f4xx_adc.o" ".\obj\stm32f4xx_gpio.o" ".\obj\stm32f4xx_sdio.o" ".\obj\stm32f4xx_usart.o" ".\obj\voice_adc_main.o" ".\obj\stm32f4_adc.o" ".\obj\stm32f4_delay.o" ".\obj\stm32f4_gpio.o" ".\obj\stm32f4_led.o" ".\obj\stm32f4_usart.o" ".\obj\stringconvert.o" 
 --strict --scatter ".\Obj\Voice_ADC.sct" 
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
 --info sizes --info totals --info unused --info veneers 
