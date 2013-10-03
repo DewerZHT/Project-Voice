@@ -3,9 +3,9 @@
 <title>Static Call Graph - [.\Obj\Voice_ADC.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Obj\Voice_ADC.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5.03 [Build 69]: Last Updated: Mon Sep 30 19:47:17 2013
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5.03 [Build 69]: Last Updated: Thu Oct 03 12:45:00 2013
 <BR><P>
-<H3>Maximum Stack Usage =        844 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
+<H3>Maximum Stack Usage =        836 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
 __rt_entry_main &rArr; main &rArr; int2str &rArr; __aeabi_memclr4
 <P>
@@ -240,7 +240,7 @@ Global Symbols
 <P><STRONG><a name="[b9]"></a>__rt_entry_postsh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$00000009))
 
 <P><STRONG><a name="[6b]"></a>__rt_entry_main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$0000000D))
-<BR><BR>[Stack]<UL><LI>Max Depth = 844 + Unknown Stack Size
+<BR><BR>[Stack]<UL><LI>Max Depth = 836 + Unknown Stack Size
 <LI>Call Chain = __rt_entry_main &rArr; main &rArr; int2str &rArr; __aeabi_memclr4
 </UL>
 <BR>[Calls]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
@@ -652,7 +652,7 @@ Global Symbols
 
 <P><STRONG><a name="[d2]"></a>RCC_I2SCLKConfig</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32f4xx_rcc.o(.text), UNUSED)
 
-<P><STRONG><a name="[85]"></a>RCC_AHB1PeriphClockCmd</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, stm32f4xx_rcc.o(.text))
+<P><STRONG><a name="[84]"></a>RCC_AHB1PeriphClockCmd</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, stm32f4xx_rcc.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Config
 <LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Config
 <LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Config
@@ -662,11 +662,11 @@ Global Symbols
 
 <P><STRONG><a name="[d4]"></a>RCC_AHB3PeriphClockCmd</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, stm32f4xx_rcc.o(.text), UNUSED)
 
-<P><STRONG><a name="[94]"></a>RCC_APB1PeriphClockCmd</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, stm32f4xx_rcc.o(.text))
+<P><STRONG><a name="[93]"></a>RCC_APB1PeriphClockCmd</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, stm32f4xx_rcc.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Config
 </UL>
 
-<P><STRONG><a name="[86]"></a>RCC_APB2PeriphClockCmd</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, stm32f4xx_rcc.o(.text))
+<P><STRONG><a name="[85]"></a>RCC_APB2PeriphClockCmd</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, stm32f4xx_rcc.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Config
 </UL>
 
@@ -707,7 +707,7 @@ Global Symbols
 
 <P><STRONG><a name="[e0]"></a>DMA_DeInit</STRONG> (Thumb, 324 bytes, Stack size 0 bytes, stm32f4xx_dma.o(.text), UNUSED)
 
-<P><STRONG><a name="[88]"></a>DMA_Init</STRONG> (Thumb, 82 bytes, Stack size 8 bytes, stm32f4xx_dma.o(.text))
+<P><STRONG><a name="[87]"></a>DMA_Init</STRONG> (Thumb, 82 bytes, Stack size 8 bytes, stm32f4xx_dma.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = DMA_Init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Config
@@ -715,7 +715,7 @@ Global Symbols
 
 <P><STRONG><a name="[e1]"></a>DMA_StructInit</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, stm32f4xx_dma.o(.text), UNUSED)
 
-<P><STRONG><a name="[89]"></a>DMA_Cmd</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, stm32f4xx_dma.o(.text))
+<P><STRONG><a name="[88]"></a>DMA_Cmd</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, stm32f4xx_dma.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Config
 </UL>
 
@@ -753,7 +753,7 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphResetCmd
 </UL>
 
-<P><STRONG><a name="[8b]"></a>ADC_Init</STRONG> (Thumb, 74 bytes, Stack size 12 bytes, stm32f4xx_adc.o(.text))
+<P><STRONG><a name="[8a]"></a>ADC_Init</STRONG> (Thumb, 74 bytes, Stack size 12 bytes, stm32f4xx_adc.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = ADC_Init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Config
@@ -761,13 +761,13 @@ Global Symbols
 
 <P><STRONG><a name="[f1]"></a>ADC_StructInit</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, stm32f4xx_adc.o(.text), UNUSED)
 
-<P><STRONG><a name="[8a]"></a>ADC_CommonInit</STRONG> (Thumb, 44 bytes, Stack size 0 bytes, stm32f4xx_adc.o(.text))
+<P><STRONG><a name="[89]"></a>ADC_CommonInit</STRONG> (Thumb, 44 bytes, Stack size 0 bytes, stm32f4xx_adc.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Config
 </UL>
 
 <P><STRONG><a name="[f2]"></a>ADC_CommonStructInit</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, stm32f4xx_adc.o(.text), UNUSED)
 
-<P><STRONG><a name="[90]"></a>ADC_Cmd</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, stm32f4xx_adc.o(.text))
+<P><STRONG><a name="[8f]"></a>ADC_Cmd</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, stm32f4xx_adc.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Config
 </UL>
 
@@ -781,13 +781,13 @@ Global Symbols
 
 <P><STRONG><a name="[f7]"></a>ADC_VBATCmd</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, stm32f4xx_adc.o(.text), UNUSED)
 
-<P><STRONG><a name="[8c]"></a>ADC_RegularChannelConfig</STRONG> (Thumb, 184 bytes, Stack size 20 bytes, stm32f4xx_adc.o(.text))
+<P><STRONG><a name="[8b]"></a>ADC_RegularChannelConfig</STRONG> (Thumb, 184 bytes, Stack size 20 bytes, stm32f4xx_adc.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = ADC_RegularChannelConfig
 </UL>
 <BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Config
 </UL>
 
-<P><STRONG><a name="[91]"></a>ADC_SoftwareStartConv</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, stm32f4xx_adc.o(.text))
+<P><STRONG><a name="[90]"></a>ADC_SoftwareStartConv</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, stm32f4xx_adc.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Config
 </UL>
 
@@ -795,7 +795,7 @@ Global Symbols
 
 <P><STRONG><a name="[f9]"></a>ADC_EOCOnEachRegularChannelCmd</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, stm32f4xx_adc.o(.text), UNUSED)
 
-<P><STRONG><a name="[8f]"></a>ADC_ContinuousModeCmd</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, stm32f4xx_adc.o(.text))
+<P><STRONG><a name="[8e]"></a>ADC_ContinuousModeCmd</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, stm32f4xx_adc.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Config
 </UL>
 
@@ -807,11 +807,11 @@ Global Symbols
 
 <P><STRONG><a name="[fd]"></a>ADC_GetMultiModeConversionValue</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32f4xx_adc.o(.text), UNUSED)
 
-<P><STRONG><a name="[8e]"></a>ADC_DMACmd</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, stm32f4xx_adc.o(.text))
+<P><STRONG><a name="[8d]"></a>ADC_DMACmd</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, stm32f4xx_adc.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Config
 </UL>
 
-<P><STRONG><a name="[8d]"></a>ADC_DMARequestAfterLastTransferCmd</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, stm32f4xx_adc.o(.text))
+<P><STRONG><a name="[8c]"></a>ADC_DMARequestAfterLastTransferCmd</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, stm32f4xx_adc.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Config
 </UL>
 
@@ -851,7 +851,7 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_AHB1PeriphResetCmd
 </UL>
 
-<P><STRONG><a name="[87]"></a>GPIO_Init</STRONG> (Thumb, 144 bytes, Stack size 20 bytes, stm32f4xx_gpio.o(.text))
+<P><STRONG><a name="[86]"></a>GPIO_Init</STRONG> (Thumb, 144 bytes, Stack size 20 bytes, stm32f4xx_gpio.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = GPIO_Init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Config
@@ -881,7 +881,7 @@ Global Symbols
 
 <P><STRONG><a name="[118]"></a>GPIO_ToggleBits</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, stm32f4xx_gpio.o(.text), UNUSED)
 
-<P><STRONG><a name="[95]"></a>GPIO_PinAFConfig</STRONG> (Thumb, 70 bytes, Stack size 20 bytes, stm32f4xx_gpio.o(.text))
+<P><STRONG><a name="[94]"></a>GPIO_PinAFConfig</STRONG> (Thumb, 70 bytes, Stack size 20 bytes, stm32f4xx_gpio.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = GPIO_PinAFConfig
 </UL>
 <BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Config
@@ -906,7 +906,7 @@ Global Symbols
 
 <P><STRONG><a name="[11b]"></a>USART_ClockStructInit</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, stm32f4xx_usart.o(.text), UNUSED)
 
-<P><STRONG><a name="[96]"></a>USART_Cmd</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, stm32f4xx_usart.o(.text))
+<P><STRONG><a name="[95]"></a>USART_Cmd</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, stm32f4xx_usart.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Config
 </UL>
 
@@ -916,9 +916,9 @@ Global Symbols
 
 <P><STRONG><a name="[11e]"></a>USART_OneBitMethodCmd</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, stm32f4xx_usart.o(.text), UNUSED)
 
-<P><STRONG><a name="[92]"></a>USART_SendData</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, stm32f4xx_usart.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_VisualScope
-<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_SendStr
+<P><STRONG><a name="[91]"></a>USART_SendData</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, stm32f4xx_usart.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_VisualScope
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_SendStr
 </UL>
 
 <P><STRONG><a name="[11f]"></a>USART_ReceiveData</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, stm32f4xx_usart.o(.text), UNUSED)
@@ -951,9 +951,9 @@ Global Symbols
 
 <P><STRONG><a name="[12d]"></a>USART_ITConfig</STRONG> (Thumb, 74 bytes, Stack size 20 bytes, stm32f4xx_usart.o(.text), UNUSED)
 
-<P><STRONG><a name="[93]"></a>USART_GetFlagStatus</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stm32f4xx_usart.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_VisualScope
-<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_SendStr
+<P><STRONG><a name="[92]"></a>USART_GetFlagStatus</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stm32f4xx_usart.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_VisualScope
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_SendStr
 </UL>
 
 <P><STRONG><a name="[12e]"></a>USART_ClearFlag</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32f4xx_usart.o(.text), UNUSED)
@@ -962,17 +962,16 @@ Global Symbols
 
 <P><STRONG><a name="[130]"></a>USART_ClearITPendingBit</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, stm32f4xx_usart.o(.text), UNUSED)
 
-<P><STRONG><a name="[6c]"></a>main</STRONG> (Thumb, 210 bytes, Stack size 16 bytes, voice_adc_main.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 844<LI>Call Chain = main &rArr; int2str &rArr; __aeabi_memclr4
+<P><STRONG><a name="[6c]"></a>main</STRONG> (Thumb, 102 bytes, Stack size 8 bytes, voice_adc_main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 836<LI>Call Chain = main &rArr; int2str &rArr; __aeabi_memclr4
 </UL>
 <BR>[Calls]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;int2str
-<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_10ms
-<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_VisualScope
-<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_SendStr
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_10ms
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_SendStr
 <LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Config
 <LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Config
 <LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Config
-<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Average
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Average
 <LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
@@ -981,24 +980,24 @@ Global Symbols
 <P><STRONG><a name="[7f]"></a>ADC_Config</STRONG> (Thumb, 246 bytes, Stack size 112 bytes, stm32f4_adc.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 132<LI>Call Chain = ADC_Config &rArr; GPIO_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
-<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_DMARequestAfterLastTransferCmd
-<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_DMACmd
-<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_ContinuousModeCmd
-<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_SoftwareStartConv
-<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_RegularChannelConfig
-<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Cmd
-<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_CommonInit
-<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Init
-<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_Cmd
-<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_Init
-<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
-<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_AHB1PeriphClockCmd
+<BR>[Calls]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_DMARequestAfterLastTransferCmd
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_DMACmd
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_ContinuousModeCmd
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_SoftwareStartConv
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_RegularChannelConfig
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Cmd
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_CommonInit
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Init
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_Cmd
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_Init
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_AHB1PeriphClockCmd
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[81]"></a>ADC_Average</STRONG> (Thumb, 66 bytes, Stack size 12 bytes, stm32f4_adc.o(.text))
+<P><STRONG><a name="[80]"></a>ADC_Average</STRONG> (Thumb, 66 bytes, Stack size 12 bytes, stm32f4_adc.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = ADC_Average
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
@@ -1012,7 +1011,7 @@ Global Symbols
 
 <P><STRONG><a name="[134]"></a>delay_1ms</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, stm32f4_delay.o(.text), UNUSED)
 
-<P><STRONG><a name="[84]"></a>delay_10ms</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, stm32f4_delay.o(.text))
+<P><STRONG><a name="[83]"></a>delay_10ms</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, stm32f4_delay.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
@@ -1021,17 +1020,17 @@ Global Symbols
 <P><STRONG><a name="[7d]"></a>LED_Config</STRONG> (Thumb, 96 bytes, Stack size 16 bytes, stm32f4_led.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = LED_Config &rArr; GPIO_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
-<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_AHB1PeriphClockCmd
+<BR>[Calls]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_AHB1PeriphClockCmd
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[80]"></a>USART_SendStr</STRONG> (Thumb, 40 bytes, Stack size 16 bytes, stm32f4_usart.o(.text))
+<P><STRONG><a name="[81]"></a>USART_SendStr</STRONG> (Thumb, 40 bytes, Stack size 16 bytes, stm32f4_usart.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = USART_SendStr
 </UL>
-<BR>[Calls]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_GetFlagStatus
-<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_SendData
+<BR>[Calls]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_GetFlagStatus
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_SendData
 </UL>
 <BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Config
 <LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
@@ -1040,25 +1039,21 @@ Global Symbols
 <P><STRONG><a name="[7e]"></a>USART_Config</STRONG> (Thumb, 134 bytes, Stack size 32 bytes, stm32f4_usart.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = USART_Config &rArr; USART_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_SendStr
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Cmd
+<BR>[Calls]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_SendStr
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Cmd
 <LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Init
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_PinAFConfig
-<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
-<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB1PeriphClockCmd
-<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_AHB1PeriphClockCmd
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_PinAFConfig
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB1PeriphClockCmd
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_AHB1PeriphClockCmd
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[83]"></a>USART_VisualScope</STRONG> (Thumb, 70 bytes, Stack size 24 bytes, stm32f4_usart.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = USART_VisualScope &rArr; USART_VisualScope_CRC16
-</UL>
-<BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_VisualScope_CRC16
-<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_GetFlagStatus
-<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_SendData
-</UL>
-<BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<P><STRONG><a name="[96]"></a>USART_VisualScope</STRONG> (Thumb, 70 bytes, Stack size 24 bytes, stm32f4_usart.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_VisualScope_CRC16
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_GetFlagStatus
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_SendData
 </UL>
 
 <P><STRONG><a name="[82]"></a>int2str</STRONG> (Thumb, 388 bytes, Stack size 824 bytes, stringconvert.o(.text))
@@ -1144,10 +1139,8 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
 </UL>
 
-<P><STRONG><a name="[97]"></a>USART_VisualScope_CRC16</STRONG> (Thumb, 58 bytes, Stack size 12 bytes, stm32f4_usart.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = USART_VisualScope_CRC16
-</UL>
-<BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_VisualScope
+<P><STRONG><a name="[97]"></a>USART_VisualScope_CRC16</STRONG> (Thumb, 58 bytes, Stack size 12 bytes, stm32f4_usart.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_VisualScope
 </UL>
 <P>
 <H3>

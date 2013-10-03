@@ -31,7 +31,6 @@
 int main( void )
 {
 	// Variable
-	u8  ADCvalueScope[2];
 	u16 ADCaverageVal[ADC_Channel] = {0};
 
 	// STM32F4 System Initial
@@ -41,8 +40,8 @@ int main( void )
 	USART_Config();
 	ADC_Config();
 
-	USART_SendStr(USART2, (u8*) "Hello! Here is \n\r");
-	USART_SendStr(USART2, (u8*) "STM32F4 QCMV Voice ADC Test.\n\r");
+// 	USART_SendStr(USART2, (u8*) "\n\r Hello! \n\r");
+// 	USART_SendStr(USART2, (u8*) "Here is STM32F4 QCMV Voice ADC Test.\n\r");
 // 	USART_SendStr(USART2, (u8*) "Please open VisualScope and config RS232 at COM1.\n\r");
 	LED_G = ~LED_G;
 	
@@ -50,25 +49,21 @@ int main( void )
 		
 		LED_G = ~LED_G;
 		ADC_Average(ADCaverageVal);
-// 		ADCaverageVal[0] = (int) (ADCaverageVal[0] / 2047) * 65535;
-		if(ADCaverageVal[0] < 32768) {
-		
-			ADCaverageVal[0] = ADCaverageVal[0] % 32768;
-			ADCaverageVal[0] = (32678 - ADCaverageVal[0]) * (-1);
-			
-		} // END if ADC channel is below 1.65 V
-		else {
 
-			ADCaverageVal[0] = ADCaverageVal[0] / 32768;
+// 		if(ADCaverageVal[0] > 0x00FF) {
+// 		
+// 			ADCaverageVal[0] = ADCaverageVal[0] & 0xFF00;
+// 			
+// 		} // END if ADC channel is above 1.65 V
+// 		else {
 
-		} // END if ADC channel is above 1.65 V
+// 			ADCaverageVal[0] = ADCaverageVal[0] & 0x00FF;
+
+// 		} // END if ADC channel is below 1.65 V
 		
 		USART_SendStr(USART2, (u8*) "ADC value = ");
 		USART_SendStr(USART2, (u8*) int2str(ADCaverageVal[0], Integer));
-		USART_SendStr(USART2, (u8*) "\n\r");
-		ADCvalueScope[0] = ADCaverageVal[0];
-		ADCvalueScope[1] = ADCaverageVal[0];
-		USART_VisualScope(USART2, (u8*) ADCvalueScope, 2);
+		USART_SendStr(USART2, (u8*) "\r");
 		delay_10ms(5);
 
 	} // END while (continue convert voice wave to digital.)

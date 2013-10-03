@@ -25,7 +25,7 @@
 ### ADS-LD Output File: '.\Obj\Voice_ADC.axf'
 ### ADS-LD Command File: '.\Obj\Voice_ADC.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile '.\Obj\Voice_ADC.lnp', Handle=0x00000780
+### Creating CmdFile '.\Obj\Voice_ADC.lnp', Handle=0x00000518
 ### Writing '.lnp' file
 ### ADS-LD Command file '.\Obj\Voice_ADC.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.

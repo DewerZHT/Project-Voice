@@ -27,7 +27,7 @@
 #define ADC3_DR_ADDRESS	((u32)0x4001224C)
 
 #define ADC_Channel		1
-#define ADC_Sample		128
+#define ADC_Sample		32
 		
 /* Function declaration ------------------------------------------------------*/
 void ADC_Config( void );
