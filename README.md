@@ -70,3 +70,5 @@ Reference documents
 
 * From PassLab :
   * Ground Loops
+
+<a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.zh_TW"><img alt="創用 CC 授權條款" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Project-Voice</span>由<a xmlns:cc="http://creativecommons.org/ns#" href="http://dewer-zh.blogspot.tw/" property="cc:attributionName" rel="cc:attributionURL">吳振豪</a>製作，以<a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.zh_TW">創用CC 姓名標示 3.0 Unported 授權條款</a>釋出。
