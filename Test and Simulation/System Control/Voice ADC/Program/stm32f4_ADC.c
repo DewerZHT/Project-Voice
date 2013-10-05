@@ -1,7 +1,7 @@
 /**
  * @File    stm32f4_ADC.c
  * @Date    2013.10.03 Thursday
- * @Author  Wu, Chen-Hao
+ * @Author  Wu, Chen-Hao CH. Wu
  *				  CYCU ICE, Lab801; AutoControl Club
  * @Version V2
  * @Brief Voice ADC Test and simulation  
