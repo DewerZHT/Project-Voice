@@ -20,9 +20,24 @@
 /* Includes ------------------------------------------------------------------*/
 // C Standard Library
 #include <stdbool.h>
+#include <string.h>
 
-typedef struct wavInf_FMT {
-	char* 
-} wavInf_FMT;
+typedef struct RIFF_FMT {
+	char ID[4];
+	char SIZE[4];
+	char FORMAT[4];
+} RIFF_FMT;
+
+typedef struct WAV_FMT {
+	char ID[4];
+	char SIZE[4];
+	char 
+} WAV_FMT;
+
+typedef struct WavInf_FMT {
+	char* FILE_Name;
+	RIFF_FMT RIFF_Inf;
+	WAV_FMT  WAV_Inf;
+} WavInf_FMT;
 
 #endif

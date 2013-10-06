@@ -44,9 +44,9 @@ unsigned char* LEdian2BEdian(unsigned char* byteVal, unsigned int byteSize)
 
 	for( byteCNT = 0; byteCNT < byteSize; byteCNT++) {
 
-		pByte = byteVal[byteCNT] << byteCNT;
+		pByte[byteSize-1 - byteCNT] = byteVal[byteCNT] << byteCNT;
 
-	} // END if byte size equals 2
+	} // END for all byte values
 
 	return pByte;
 
@@ -62,6 +62,18 @@ unsigned char* LEdian2BEdian(unsigned char* byteVal, unsigned int byteSize)
  **/
 unsigned char* BEdian2LEdian(unsigned char* byteVal, unsigned int byteSize)
 {
+	unsigned char  byteCNT;
+	unsigned char* pByte;
+
+	pByte = malloc(byteSize * sizeof(char));
+
+	for(byteCNT = 0; byteCNT < byteSize; byteCNT++) {
+
+		pByte[byteCNT] = byteVal[byteSize-1 - byteCNT] << byteCNT;
+
+	} // END for all byte values
+
+	return pByte;
 
 } // END BEdian2LEdian
 
