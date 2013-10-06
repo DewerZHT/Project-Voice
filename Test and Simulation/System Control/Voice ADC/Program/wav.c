@@ -30,23 +30,37 @@ isPCM()
 /** convert little edian to big edian ******************************************
  *
  * @Function LEdian2BEdian
- * @Input  : char* fileName
- * @Output : 
+ * @Input  : unsigned char* byteVal  - data wait to be convert
+ *					 unsigned int   byteSize - data size (n Bytes)
+ * @Output : unsigned char* pByte
  *
  **/
-LEdian2BEdian(unsigned char* ,unsigned char* ,unsigned int byteSize) 
+unsigned char* LEdian2BEdian(unsigned char* byteVal, unsigned int byteSize) 
 {
+	unsigned char  byteCNT;
+	unsigned char* pByte;
+
+	pByte = malloc(byteSize * sizeof(char));
+
+	for( byteCNT = 0; byteCNT < byteSize; byteCNT++) {
+
+		pByte = byteVal[byteCNT] << byteCNT;
+
+	} // END if byte size equals 2
+
+	return pByte;
 
 } // END LEdian2BEdian
 
 /** convert big edian to little edian ******************************************
  *
  * @Function BEdian2LEdian
- * @Input  : char* fileName
- * @Output : 
+ * @Input  : unsigned char* byteVal  - data wait to be convert
+ *					 unsigned int   byteSize - data size (n Bytes)
+ * @Output : unsigned char* pByte 
  *
  **/
-BEdian2LEdian() // BigEdian data to LittleEdian data
+unsigned char* BEdian2LEdian(unsigned char* byteVal, unsigned int byteSize)
 {
 
 } // END BEdian2LEdian
@@ -58,12 +72,12 @@ BEdian2LEdian() // BigEdian data to LittleEdian data
  * @Output : 
  *
  **/
-creatWav(char* fileName)
+creatWav(const char* fileName)
 {
 
 } // END creatWav
 
-openWav()
+openWav(const char* fileName)
 {
 
 } // END openWav
@@ -73,7 +87,7 @@ playWav()
 
 } // END playWav
 
-recordWav()
+recordWav(const char* fileName)
 {
 
 } // END recordWav
@@ -82,3 +96,8 @@ getWavInf()
 {
 
 } // END getWavInf
+
+deleteWav()
+{
+
+} // END delete 

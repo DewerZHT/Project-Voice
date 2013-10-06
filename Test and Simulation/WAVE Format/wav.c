@@ -41,7 +41,7 @@ unsigned char* Wav_2ByteLittleEndianConvert(unsigned char byte[], int nBytes) {
 	
 	for( ; byteCNT < nBytes; byteCNT++) {
 	
-		value[byteCNT] = byte[0]+byte[1]*256;		
+		value[byteCNT] = byte[0] + (byte[1]*256);		
 	
 	} // END for ()
 	
