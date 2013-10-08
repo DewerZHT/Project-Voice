@@ -72,7 +72,7 @@ void ADC_Config( void )
   ADC_InitStruct.ADC_ContinuousConvMode = ENABLE;                             // 
   ADC_InitStruct.ADC_ExternalTrigConvEdge = ADC_ExternalTrigConvEdge_None;    // Disable
   ADC_InitStruct.ADC_DataAlign = ADC_DataAlign_Right;                         // ADC
-  ADC_InitStruct.ADC_NbrOfConversion = ADC_Channel;                           // 轉換ADC通道數目
+  ADC_InitStruct.ADC_NbrOfConversion = ADC_Channel;                           // 
   ADC_Init(ADC1, &ADC_InitStruct);
 
   /* ADC Regular Config *******************************************************/

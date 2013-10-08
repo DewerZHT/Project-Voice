@@ -5,10 +5,11 @@
 /* disk I/O modules and attach it to FatFs module with common interface. */
 /*-----------------------------------------------------------------------*/
 
-#include "stm32f10x.h"
-
-#include "SPI_SD_driver.h"
-
+/* Include  **/
+#include <stm32f4xx.h>
+/* Include STM32F4 periph driver **/
+#include "stm32_SDIO.h"
+/* Include Low Level Disk I/O driver **/
 #include "diskio.h"
 
 
@@ -23,7 +24,7 @@ DSTATUS disk_initialize (
 
     if(drv)
     {
-        return STA_NOINIT;  //僅支持磁盤0的操作
+        return STA_NOINIT;  // only supprot disk 0 to access
     }
 
     state = SD_Init();
@@ -33,11 +34,11 @@ DSTATUS disk_initialize (
     }
     else if(state != 0)
     {
-        return STA_NOINIT;  //其他錯誤：初始化失敗
+        return STA_NOINIT;  // the others exception : Initial Failure
     }
     else
     {
-        return 0;           //初始化成功
+        return 0;           // initial success
     }
 }
 
@@ -52,10 +53,10 @@ DSTATUS disk_status (
 {
     if(drv)
     {
-        return STA_NOINIT;  //僅支持磁盤0操作
+        return STA_NOINIT;  // 
     }
 
-    //檢查SD卡是否插入
+    // check is sd card inserted 
 //    if(!SD_DET())
 //    {
 //        return STA_NODISK;
@@ -78,20 +79,21 @@ DRESULT disk_read (
 	u8 res=0;
     if (drv || !count)
     {    
-        return RES_PARERR;  //僅支持單磁盤操作，count不能等於0，否則返回參數錯誤
+        return RES_PARERR;  /* only support single disk access,
+														   count can;t be 0 (return value error) */
     }
 //    if(!SD_DET())
 //    {
-//        return RES_NOTRDY;  //沒有檢測到SD卡，報NOT READY錯誤
+//        return RES_NOTRDY;  // if not sensor sd card, retuen NOT READY exception
 //    }
 
     
 	
-    if(count==1)            //1個sector的讀操作      
+    if(count==1)            // read one sector    
     {                                                
         res = SD_ReadSingleBlock(sector, buff);      
     }                                                
-    else                    //多個sector的讀操作     
+    else                    // read multi sector     
     {                                                
         res = SD_ReadMultiBlock(sector, buff, count);
     }                                                
@@ -106,7 +108,7 @@ DRESULT disk_read (
         buff+=512;                             
     }while(--count);                                         
     */
-    //處理返回值，將SPI_SD_driver.c的返回值轉成ff.c的返回值
+    // return value convert to FATFS
     if(res == 0x00)
     {
         return RES_OK;
@@ -134,14 +136,15 @@ DRESULT disk_write (
 
     if (drv || !count)
     {    
-        return RES_PARERR;  //僅支持單磁盤操作，count不能等於0，否則返回參數錯誤
+        return RES_PARERR;  /* only support single disk access,
+														   count can;t be 0 (return value error) */
     }
 //    if(!SD_DET())
 //    {
-//        return RES_NOTRDY;  //沒有檢測到SD卡，報NOT READY錯誤
+//        return RES_NOTRDY;  // if not sensor sd card, retuen NOT READY exception
 //    }
 
-    // 讀寫操作
+    // read write access
     if(count == 1)
     {
         res = SD_WriteSingleBlock(sector, buff);
@@ -150,7 +153,8 @@ DRESULT disk_write (
     {
         res = SD_WriteMultiBlock(sector, buff, count);
     }
-    // 返回值轉換
+		
+    // return value convert to FATFS
     if(res == 0)
     {
         return RES_OK;
@@ -178,10 +182,12 @@ DRESULT disk_ioctl (
 
     if (drv)
     {    
-        return RES_PARERR;  //僅支持單磁盤操作，否則返回參數錯誤
+        return RES_PARERR;  /* only support single disk access,
+														   count can;t be 0 (return value error) */
     }
     
-    //FATFS目前版本僅需處理CTRL_SYNC，GET_SECTOR_COUNT，GET_BLOCK_SIZ三個命令
+    // In this version, FATFS only need to process three instruction 
+		// CTRL_SYNC，GET_SECTOR_COUNT，GET_BLOCK_SIZ
     switch(ctrl)
     {
     case CTRL_SYNC:

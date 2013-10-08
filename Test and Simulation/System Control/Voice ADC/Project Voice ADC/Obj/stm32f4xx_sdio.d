@@ -10,7 +10,11 @@
 .\Obj\stm32f4xx_sdio.o: ..\Program\stm32f4xx_conf.h
 .\Obj\stm32f4xx_sdio.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h
 .\Obj\stm32f4xx_sdio.o: ..\Libraries\CMSIS\stm32f4xx.h
+.\Obj\stm32f4xx_sdio.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h
 .\Obj\stm32f4xx_sdio.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dma.h
 .\Obj\stm32f4xx_sdio.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h
 .\Obj\stm32f4xx_sdio.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h
+.\Obj\stm32f4xx_sdio.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sdio.h
+.\Obj\stm32f4xx_sdio.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h
+.\Obj\stm32f4xx_sdio.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h
 .\Obj\stm32f4xx_sdio.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h

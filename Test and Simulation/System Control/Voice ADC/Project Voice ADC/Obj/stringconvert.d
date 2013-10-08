@@ -10,7 +10,11 @@
 .\Obj\stringconvert.o: ..\Program\stm32f4xx_conf.h
 .\Obj\stringconvert.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h
 .\Obj\stringconvert.o: ..\Libraries\CMSIS\stm32f4xx.h
+.\Obj\stringconvert.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h
 .\Obj\stringconvert.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dma.h
 .\Obj\stringconvert.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h
 .\Obj\stringconvert.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h
+.\Obj\stringconvert.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sdio.h
+.\Obj\stringconvert.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h
+.\Obj\stringconvert.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h
 .\Obj\stringconvert.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h
