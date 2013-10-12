@@ -18,6 +18,24 @@ I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sdio.h)(0x52317E36)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h)(0x52317E36)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h)(0x52317E36)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x52317E36)
+F (..\Libraries\STM32F4xx_StdPeriph_Driver\src\misc.c)(0x52317E36)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I..\ -I..\Libraries\CMSIS -I..\Libraries\CMSIS\startup -I..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I..\Libraries\STM32F4xx_StdPeriph_Driver\src -I..\Program -I..\Libraries\FATFS -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F4xx -DSTM32F40XX -DUSE_STDPERIPH_DRIVER -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM -o ".\Obj\misc.o" --omf_browse ".\Obj\misc.crf" --depend ".\Obj\misc.d")
+I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x52317E36)
+I (..\Libraries\CMSIS\stm32f4xx.h)(0x52317E36)
+I (..\Libraries\CMSIS\core_cm4.h)(0x52317E36)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x516E81E6)
+I (..\Libraries\CMSIS\core_cmInstr.h)(0x52317E36)
+I (..\Libraries\CMSIS\core_cmFunc.h)(0x52317E36)
+I (..\Libraries\CMSIS\core_cm4_simd.h)(0x52317E36)
+I (..\Libraries\CMSIS\system_stm32f4xx.h)(0x52317E36)
+I (..\Program\stm32f4xx_conf.h)(0x52536606)
+I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x52317E36)
+I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dma.h)(0x52317E36)
+I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h)(0x52317E36)
+I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x52317E36)
+I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sdio.h)(0x52317E36)
+I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h)(0x52317E36)
+I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h)(0x52317E36)
+I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x52317E36)
 F (..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rcc.c)(0x52317E36)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I..\ -I..\Libraries\CMSIS -I..\Libraries\CMSIS\startup -I..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I..\Libraries\STM32F4xx_StdPeriph_Driver\src -I..\Program -I..\Libraries\FATFS -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F4xx -DSTM32F40XX -DUSE_STDPERIPH_DRIVER -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM -o ".\Obj\stm32f4xx_rcc.o" --omf_browse ".\Obj\stm32f4xx_rcc.crf" --depend ".\Obj\stm32f4xx_rcc.d")
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x52317E36)
 I (..\Libraries\CMSIS\stm32f4xx.h)(0x52317E36)
@@ -267,9 +285,7 @@ I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sdio.h)(0x52317E36)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h)(0x52317E36)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h)(0x52317E36)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x52317E36)
-F (..\Documents\History.txt)(0x52317E36)()
-F (..\Documents\Readme.txt)(0x52317E36)()
-F (..\Libraries\FATFS\diskio.c)(0x52536699)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I..\ -I..\Libraries\CMSIS -I..\Libraries\CMSIS\startup -I..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I..\Libraries\STM32F4xx_StdPeriph_Driver\src -I..\Program -I..\Libraries\FATFS -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F4xx -DSTM32F40XX -DUSE_STDPERIPH_DRIVER -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM -o ".\Obj\diskio.o" --omf_browse ".\Obj\diskio.crf" --depend ".\Obj\diskio.d")
+F (..\Program\stm32f4_SDIO.c)(0x5253A248)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I..\ -I..\Libraries\CMSIS -I..\Libraries\CMSIS\startup -I..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I..\Libraries\STM32F4xx_StdPeriph_Driver\src -I..\Program -I..\Libraries\FATFS -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F4xx -DSTM32F40XX -DUSE_STDPERIPH_DRIVER -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM -o ".\Obj\stm32f4_sdio.o" --omf_browse ".\Obj\stm32f4_sdio.crf" --depend ".\Obj\stm32f4_sdio.d")
 I (..\Libraries\CMSIS\stm32f4xx.h)(0x52317E36)
 I (..\Libraries\CMSIS\core_cm4.h)(0x52317E36)
 I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x516E81E6)
@@ -287,9 +303,32 @@ I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sdio.h)(0x52317E36)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h)(0x52317E36)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h)(0x52317E36)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x52317E36)
-F (..\Libraries\FATFS\ff.c)(0x51000A9E)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I..\ -I..\Libraries\CMSIS -I..\Libraries\CMSIS\startup -I..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I..\Libraries\STM32F4xx_StdPeriph_Driver\src -I..\Program -I..\Libraries\FATFS -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F4xx -DSTM32F40XX -DUSE_STDPERIPH_DRIVER -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM -o ".\Obj\ff.o" --omf_browse ".\Obj\ff.crf" --depend ".\Obj\ff.d")
-I (..\Libraries\FATFS\ff.h)(0x51000AA2)
-I (..\Libraries\FATFS\integer.h)(0x515ABF8A)
-I (..\Libraries\FATFS\ffconf.h)(0x515B063C)
-I (..\Libraries\FATFS\diskio.h)(0x515ABE5C)
-I (..\Libraries\CMSIS\stm32f10x.h)(0x52317E36)
+I (..\Program\stm32f4_sdio.h)(0x52317C35)
+F (..\Documents\History.txt)(0x52317E36)()
+F (..\Documents\Readme.txt)(0x52317E36)()
+F (..\Libraries\FATFS\diskio.c)(0x525397A7)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I..\ -I..\Libraries\CMSIS -I..\Libraries\CMSIS\startup -I..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I..\Libraries\STM32F4xx_StdPeriph_Driver\src -I..\Program -I..\Libraries\FATFS -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F4xx -DSTM32F40XX -DUSE_STDPERIPH_DRIVER -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM -o ".\Obj\diskio.o" --omf_browse ".\Obj\diskio.crf" --depend ".\Obj\diskio.d")
+I (..\Libraries\CMSIS\stm32f4xx.h)(0x52317E36)
+I (..\Libraries\CMSIS\core_cm4.h)(0x52317E36)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x516E81E6)
+I (..\Libraries\CMSIS\core_cmInstr.h)(0x52317E36)
+I (..\Libraries\CMSIS\core_cmFunc.h)(0x52317E36)
+I (..\Libraries\CMSIS\core_cm4_simd.h)(0x52317E36)
+I (..\Libraries\CMSIS\system_stm32f4xx.h)(0x52317E36)
+I (..\Program\stm32f4xx_conf.h)(0x52536606)
+I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x52317E36)
+I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x52317E36)
+I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dma.h)(0x52317E36)
+I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h)(0x52317E36)
+I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x52317E36)
+I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sdio.h)(0x52317E36)
+I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h)(0x52317E36)
+I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h)(0x52317E36)
+I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x52317E36)
+I (..\Program\stm32f4_sdio.h)(0x52317C35)
+I (..\Libraries\FATFS\diskio.h)(0x52317C35)
+I (..\Libraries\FATFS\integer.h)(0x52539608)
+F (..\Libraries\FATFS\ff.c)(0x52317C35)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I..\ -I..\Libraries\CMSIS -I..\Libraries\CMSIS\startup -I..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I..\Libraries\STM32F4xx_StdPeriph_Driver\src -I..\Program -I..\Libraries\FATFS -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F4xx -DSTM32F40XX -DUSE_STDPERIPH_DRIVER -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM -o ".\Obj\ff.o" --omf_browse ".\Obj\ff.crf" --depend ".\Obj\ff.d")
+I (..\Libraries\FATFS\ff.h)(0x52317C35)
+I (..\Libraries\FATFS\integer.h)(0x52539608)
+I (..\Libraries\FATFS\ffconf.h)(0x52317C35)
+I (..\Libraries\FATFS\diskio.h)(0x52317C35)

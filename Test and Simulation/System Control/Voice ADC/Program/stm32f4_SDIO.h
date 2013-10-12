@@ -1,28 +1,13 @@
-/**
- * @File    stm32f4_sdio.h
- * @Date    2013.09.03 Tuesday
- * @Author  Wu, Chen-Hao
- *				  CYCU ICE, Lab801; AutoControl Club
- * @Version V3
- * @Brief   To test SDIO on QCopter - MachineVision Board,
- *
- * @Create  2013.09.03 Tuesday
- *
- **/ 
 
 #ifndef __STM32F4_SDIO_H
 #define __STM32F4_SDIO_H
 
 #ifdef __cplusplus
-	extern "C" {
+ extern "C" {
 #endif
 
-/* Includes ------------------------------------------------------------------*/
-// ST library
 #include <stm32f4xx.h>
 
-		
-/* Data-type definition ------------------------------------------------------*/
 typedef enum {
 /** 
   * @brief  SDIO specific error defines  

@@ -3,4 +3,3 @@
 .\Obj\ff.o: ..\Libraries\FATFS\integer.h
 .\Obj\ff.o: ..\Libraries\FATFS\ffconf.h
 .\Obj\ff.o: ..\Libraries\FATFS\diskio.h
-.\Obj\ff.o: ..\Libraries\CMSIS\stm32f10x.h

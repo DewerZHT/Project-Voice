@@ -17,3 +17,6 @@
 .\Obj\diskio.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h
 .\Obj\diskio.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h
 .\Obj\diskio.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h
+.\Obj\diskio.o: ..\Program\stm32f4_sdio.h
+.\Obj\diskio.o: ..\Libraries\FATFS\diskio.h
+.\Obj\diskio.o: ..\Libraries\FATFS\integer.h
