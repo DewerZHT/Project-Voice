@@ -47,4 +47,7 @@ typedef struct WavInf_FMT {
 
 extern unsigned char* pByte;
 
+extern unsigned char* LEdian2BEdian(unsigned char* byteVal, unsigned int byteSize);
+extern unsigned char* BEdian2LEdian(unsigned char* byteVal, unsigned int byteSize);
+
 #endif

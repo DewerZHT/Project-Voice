@@ -120,3 +120,16 @@ unsigned char* BEdian2LEdian(unsigned char* byteVal, unsigned int byteSize)
 	return pByte;
 
 } // END BEdian2LEdian
+
+/** open wave file with it's file name *****************************************
+ *
+ * @Function openWav
+ * @Input  : const char* fileName - wave file name
+ * @Output : unsigned char* pByte 
+ *
+ **/
+bool openWav(const char* fileName)
+{
+	FILE* 
+
+} // END openWav

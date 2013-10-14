@@ -16,21 +16,6 @@
 
 unsigned char* pByte;
 
-isRIFF(const WavInf_FMT* )
-{
-
-} // END isRIFF
-
-isWav()
-{
-
-} // END isWav
-
-isPCM()
-{
-
-} // END isPCM
-
 /** convert little edian to big edian ******************************************
  *
  * @Function LEdian2BEdian
@@ -91,27 +76,34 @@ creatWav(const char* fileName)
 
 } // END creatWav
 
+deleteWav()
+{
+
+} // END delete 
+
 openWav(const char* fileName)
 {
 
 } // END openWav
 
-playWav()
+cloesWav(const char* fileName)
 {
 
-} // END playWav
+}
 
-recordWav(const char* fileName)
+writeSample()
 {
 
-} // END recordWav
+} // END writeSample
+
+readSample()
+{
+	
+} // END readSample
 
 getWavInf()
 {
 
 } // END getWavInf
 
-deleteWav()
-{
 
-} // END delete 
