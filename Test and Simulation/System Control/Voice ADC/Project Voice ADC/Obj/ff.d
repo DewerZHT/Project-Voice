@@ -1,5 +1,5 @@
-.\Obj\ff.o: ..\Libraries\FATFS\ff.c
-.\Obj\ff.o: ..\Libraries\FATFS\ff.h
-.\Obj\ff.o: ..\Libraries\FATFS\integer.h
-.\Obj\ff.o: ..\Libraries\FATFS\ffconf.h
-.\Obj\ff.o: ..\Libraries\FATFS\diskio.h
+.\obj\ff.o: ..\Libraries\FATFS\ff.c
+.\obj\ff.o: ..\Libraries\FATFS\ff.h
+.\obj\ff.o: ..\Libraries\FATFS\integer.h
+.\obj\ff.o: ..\Libraries\FATFS\ffconf.h
+.\obj\ff.o: ..\Libraries\FATFS\diskio.h

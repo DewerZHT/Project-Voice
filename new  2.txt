@@ -1,0 +1,10 @@
+STM32 F407 electric schematics Note :
+
+1.USB_OTG :
+    full speed USB communication need to be associate with PA 9 | PA 10 | PA 11 | PA 12
+		see the data sheet form STM32F405xx & STM32F407xx datasheet Appendix A.3 at page 167
+		
+2.Microphone :
+    Need to note that the basis at 1.65 V, cause the system chip of ADC is activated at 3.3 V.
+		Then the signal must be operated to .
+3.

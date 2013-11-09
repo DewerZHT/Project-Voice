@@ -24,7 +24,7 @@
 ### ADS-LD Output File: '.\Obj\Project_Test_SDIO.axf'
 ### ADS-LD Command File: '.\Obj\Project_Test_SDIO.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile '.\Obj\Project_Test_SDIO.lnp', Handle=0x0000064C
+### Creating CmdFile '.\Obj\Project_Test_SDIO.lnp', Handle=0x000001CC
 ### Writing '.lnp' file
 ### ADS-LD Command file '.\Obj\Project_Test_SDIO.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.

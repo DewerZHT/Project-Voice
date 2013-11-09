@@ -867,10 +867,10 @@ ARM Macro Assembler    Page 14
               00000400 
               00000200 
               00000000 
-Command Line: --debug --xref --cpu=Cortex-M4.fp --apcs=interwork --depend=.\Obj
-\startup_stm32f4xx.d -o.\Obj\startup_stm32f4xx.o -IC:\Keil\ARM\RV31\INC -IC:\Ke
-il\ARM\CMSIS\Include -IC:\Keil\ARM\Inc\ST\STM32F4xx --list=.\List\startup_stm32
-f4xx.lst ..\Libraries\CMSIS\startup\startup_stm32f4xx.s
+Command Line: --debug --xref --cpu=Cortex-M4.fp --apcs=interwork --depend=.\obj
+\startup_stm32f4xx.d -o.\obj\startup_stm32f4xx.o -IC:\Keil\ARM\RV31\INC -IC:\Ke
+il\ARM\PACK\ARM\CMSIS\3.20.3\CMSIS\Include -IC:\Keil\ARM\Inc\ST\STM32F4xx --lis
+t=.\list\startup_stm32f4xx.lst ..\Libraries\CMSIS\startup\startup_stm32f4xx.s
 
 
 

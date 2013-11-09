@@ -1,6 +1,24 @@
 Project-Voice
 =============
 The voice project of Embedded System use STM32
+(Note: this is project for my university graduate)
+
+Goal:
+=====
+1. Record sound into storage device
+2. Analysis what period of recording wave is speech
+
+How to use it:
+==============
+1.If you don't want to modified the source code and do some handcraft
+  please see step 2.
+  While you want to bulid your own, make sure you have some concept
+	of EE and ICE. Then see step
+
+2.Buy 
+
+Install Steps:
+==============
 
 
 Hardware

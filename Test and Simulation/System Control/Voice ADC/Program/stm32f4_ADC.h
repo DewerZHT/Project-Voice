@@ -10,8 +10,8 @@
  *
  **/ 
 
-#ifndef __QCOPTERMV_ADC_H
-#define __QCOPTERMV_ADC_H
+#ifndef QCOPTERMV_ADC_H
+#define QCOPTERMV_ADC_H
 
 #ifdef __cplusplus
 	extern "C" {
